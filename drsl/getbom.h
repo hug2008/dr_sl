@@ -21,7 +21,7 @@ namespace drsl
 *       BOM and move passed it, use skipbom() instead.
 */
 template <typename T>
-inline uchar32_t getbom(T *str)
+inline char32_t getbom(T *str)
 {
     T *temp;
     if (drsl::nextchar(temp) == 0xFEFF)

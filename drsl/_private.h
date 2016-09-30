@@ -19,20 +19,20 @@ namespace drsl
 
 #define UNICODE_BOM             0xFEFF
 
-#define UNI_REPLACEMENT_CHAR    (uchar32_t)0x0000FFFD
-#define UNI_MAX_BMP             (uchar32_t)0x0000FFFF
-#define UNI_MAX_UTF16           (uchar32_t)0x0010FFFF
-#define UNI_MAX_UTF32           (uchar32_t)0x7FFFFFFF
-#define UNI_MAX_LEGAL_UTF32     (uchar32_t)0x0010FFFF
+#define UNI_REPLACEMENT_CHAR    (char32_t)0x0000FFFD
+#define UNI_MAX_BMP             (char32_t)0x0000FFFF
+#define UNI_MAX_UTF16           (char32_t)0x0010FFFF
+#define UNI_MAX_UTF32           (char32_t)0x7FFFFFFF
+#define UNI_MAX_LEGAL_UTF32     (char32_t)0x0010FFFF
 
-#define UNI_SUR_HIGH_START      (uchar32_t)0xD800
-#define UNI_SUR_HIGH_END        (uchar32_t)0xDBFF
-#define UNI_SUR_LOW_START       (uchar32_t)0xDC00
-#define UNI_SUR_LOW_END         (uchar32_t)0xDFFF
+#define UNI_SUR_HIGH_START      (char32_t)0xD800
+#define UNI_SUR_HIGH_END        (char32_t)0xDBFF
+#define UNI_SUR_LOW_START       (char32_t)0xDC00
+#define UNI_SUR_LOW_END         (char32_t)0xDFFF
 
-#define UNI_HALF_SHIFT          (uchar32_t)10
-#define UNI_HALF_BASE           (uchar32_t)0x0010000UL
-#define UNI_HALF_MASK           (uchar32_t)0x3FFUL
+#define UNI_HALF_SHIFT          (char32_t)10
+#define UNI_HALF_BASE           (char32_t)0x0010000UL
+#define UNI_HALF_MASK           (char32_t)0x3FFUL
 
 /*
  * Index into the table below with the first byte of a UTF-8 sequence to
@@ -57,7 +57,7 @@ static const char g_trailingBytesForUTF8[256] = {
  * This table contains as many values as there might be trailing bytes
  * in a UTF-8 sequence.
  */
-static const uchar32_t g_offsetsFromUTF8[6] = {0x00000000UL, 0x00003080UL, 0x000E2080UL,
+static const char32_t g_offsetsFromUTF8[6] = {0x00000000UL, 0x00003080UL, 0x000E2080UL,
 		                                       0x03C82080UL, 0xFA082080UL, 0x82082080UL};
 
 /*
@@ -194,7 +194,7 @@ inline bool is_legal_utf8(const char *str, unsigned short length)
 *       be returned. If the replacement character can not be used, NULL will be
 *       returned.
 */
-inline uchar32_t validate_utf32_char(uchar32_t character)
+inline char32_t validate_utf32_char(char32_t character)
 {
     // We first need to make sure that it is not higher than the 17'th plane.
     if (character <= UNI_MAX_LEGAL_UTF32)

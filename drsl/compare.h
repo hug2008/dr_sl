@@ -39,8 +39,8 @@ inline int compare(const T *str1, const U *str2, size_t str1Length = -1, size_t 
 
     while (str1Length > 0 && str2Length > 0)
     {
-        uchar32_t ch1 = nextchar(str1);
-        uchar32_t ch2 = nextchar(str2);
+        char32_t ch1 = nextchar(str1);
+        char32_t ch2 = nextchar(str2);
 
         ret = ch1 - ch2;
 

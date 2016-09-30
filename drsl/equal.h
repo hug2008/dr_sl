@@ -42,8 +42,8 @@ inline bool equal(const T *str1, const U *str2, bool caseSensitive = true, size_
     }
 
     // We need to grab the first characters first.
-    uchar32_t ch1 = nextchar(str1);
-    uchar32_t ch2 = nextchar(str2);
+    char32_t ch1 = nextchar(str1);
+    char32_t ch2 = nextchar(str2);
 
     if (caseSensitive)
     {

@@ -24,7 +24,7 @@ namespace drsl
 */
 #ifdef DRSL_ONLY_ASCII
 template <typename T>
-inline uchar32_t getchar(const T *str, size_t index, size_t strLength = -1)
+inline char32_t getchar(const T *str, size_t index, size_t strLength = -1)
 {
     if (strLength != -1)
     {
@@ -34,9 +34,9 @@ inline uchar32_t getchar(const T *str, size_t index, size_t strLength = -1)
         }
     }
 
-    return (uchar32_t)str[index];
+    return (char32_t)str[index];
 }
-template <> inline uchar32_t getchar(const char *str, size_t index, size_t strLength)
+template <> inline char32_t getchar(const char *str, size_t index, size_t strLength)
 {
     if (strLength != -1)
     {
@@ -46,9 +46,9 @@ template <> inline uchar32_t getchar(const char *str, size_t index, size_t strLe
         }
     }
 
-    return (uchar32_t)(unsigned char)str[index];
+    return (char32_t)(unsigned char)str[index];
 }
-template <> inline uchar32_t getchar(const uchar16_t *str, size_t index, size_t strLength)
+template <> inline char32_t getchar(const char16_t *str, size_t index, size_t strLength)
 {
     if (strLength != -1)
     {
@@ -58,18 +58,18 @@ template <> inline uchar32_t getchar(const uchar16_t *str, size_t index, size_t 
         }
     }
 
-    return (uchar32_t)(uchar16_t)str[index];
+    return (char32_t)(char16_t)str[index];
 }
 #else
 template <typename T>
-inline uchar32_t getchar(const T *str, size_t index, size_t strLength = -1)
+inline char32_t getchar(const T *str, size_t index, size_t strLength = -1)
 {
     const T *temp = str;
 
     // Stores the start of the next character.
     const T *start_of_ch = str;
 
-    uchar32_t ch;
+    char32_t ch;
     while (strLength > 0 && (ch = drsl::nextchar(temp)) != '\0')
     {
         size_t cur_pos = temp - str;
@@ -91,7 +91,7 @@ inline uchar32_t getchar(const T *str, size_t index, size_t strLength = -1)
 }
 
 // Optimized case.
-inline uchar32_t getchar(const char32_t *str, size_t index, size_t strLength = -1)
+inline char32_t getchar(const char32_t *str, size_t index, size_t strLength = -1)
 {
     if (strLength != (size_t)-1)
     {
@@ -101,11 +101,11 @@ inline uchar32_t getchar(const char32_t *str, size_t index, size_t strLength = -
         }
     }
 
-    return static_cast<uchar32_t>(str[index]);
+    return static_cast<char32_t>(str[index]);
 }
 #endif
 
-inline uchar32_t getchar(const wchar_t *str, size_t index, size_t strLength = -1)
+inline char32_t getchar(const wchar_t *str, size_t index, size_t strLength = -1)
 {
     switch (sizeof(wchar_t))
     {
@@ -118,7 +118,7 @@ inline uchar32_t getchar(const wchar_t *str, size_t index, size_t strLength = -1
 
 
 template <typename T>
-inline uchar32_t getchar(const reference_string<T> &str, size_t index)
+inline char32_t getchar(const reference_string<T> &str, size_t index)
 {
     return getchar(str.start, index, str.end - str.start);
 }

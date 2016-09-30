@@ -20,10 +20,10 @@ namespace drsl
 *   \return                A pointer in \c str to the fist occurance of the character.
 *
 *   \remarks
-*       This function is functionally equivalent to findfirst(const T *, uchar32_t, size_t).
+*       This function is functionally equivalent to findfirst(const T *, char32_t, size_t).
 */
 template <typename T>
-inline T * findfirstof(T *str, uchar32_t character, size_t strLength = -1)
+inline T * findfirstof(T *str, char32_t character, size_t strLength = -1)
 {
     return drsl::findfirst(str, character, strLength);
 }
@@ -42,7 +42,7 @@ inline const T * findfirstof(const T *str, const T *charSet, size_t strLength = 
 {
     const T *temp = str;
 
-    uchar32_t ch;
+    char32_t ch;
     while (strLength > 0 && (ch = nextchar(temp)) != '\0')
     {
         // Now we need to search through the character set and check if the character
@@ -53,7 +53,7 @@ inline const T * findfirstof(const T *str, const T *charSet, size_t strLength = 
         const T *start_of_ch2 = temp_set;
 
         size_t temp_length = setLength;
-        uchar32_t ch2;
+        char32_t ch2;
         while (temp_length > 0 && (ch2 = nextchar(temp_set)) != '\0')
         {
             if (ch2 == ch)

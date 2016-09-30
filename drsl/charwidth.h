@@ -20,7 +20,7 @@ namespace drsl
 *       If the character is invalid, the function will return 0.
 */
 template <typename T>
-inline size_t charwidth(uchar32_t character)
+inline size_t charwidth(char32_t character)
 {
     // The character is not allowed to be equal to a UTF-16 surrogate. If it is,
     // we return 0.
@@ -38,7 +38,7 @@ inline size_t charwidth(uchar32_t character)
     return 1;
 }
 
-template <> inline size_t charwidth<char>(uchar32_t character)
+template <> inline size_t charwidth<char>(char32_t character)
 {
     if (character < 0x80)
     {
@@ -59,7 +59,7 @@ template <> inline size_t charwidth<char>(uchar32_t character)
 
     return 0;
 }
-template <> inline size_t charwidth<char16_t>(uchar32_t character)
+template <> inline size_t charwidth<char16_t>(char32_t character)
 {
     if (character <= UNI_MAX_BMP)
     {
@@ -81,7 +81,7 @@ template <> inline size_t charwidth<char16_t>(uchar32_t character)
     
     return 2;
 }
-template <> inline size_t charwidth<wchar_t>(uchar32_t character)
+template <> inline size_t charwidth<wchar_t>(char32_t character)
 {
     switch (sizeof(wchar_t))
     {

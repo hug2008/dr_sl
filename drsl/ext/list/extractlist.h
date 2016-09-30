@@ -39,7 +39,7 @@ struct LIST_OPTIONS
     /**
     *   \brief  The character that seperates each item in the list.
     */
-    uchar32_t seperator;
+    char32_t seperator;
 
     /**
     *   \brief The escape character.
@@ -50,7 +50,7 @@ struct LIST_OPTIONS
     *   is only required for the appropriate quote type in the given situation. When the escape
     *   character is found outside a quote, it is treated like a normal symbol.
     */
-    uchar32_t escapeCharacter;
+    char32_t escapeCharacter;
 };
 
 

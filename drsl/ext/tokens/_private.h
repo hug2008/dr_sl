@@ -34,7 +34,7 @@ inline bool _check_token_group(T *&str, T *groups)
 
     T *temp = groups;
 
-    uchar32_t ch;
+    char32_t ch;
     while ((ch = nextchar(temp)) != '\0')
     {
         // If we have a space, we can now check if this token is at the start of the string.
@@ -109,7 +109,7 @@ inline void _get_block(reference_string<T> &block, size_t index, T *blocks)
 
     T *temp = blocks;
 
-    uchar32_t ch = '\0';
+    char32_t ch = '\0';
     do
     {
         // If our indexes are the same, we want to set the start of the block. If the
@@ -168,7 +168,7 @@ inline bool _check_ignore_block_end(T *&str, const reference_string<T> &start, T
     // that is equal to 'start'. It's important that the index starts at -1.
     size_t index = 0;
 
-    uchar32_t ch = '\0';
+    char32_t ch = '\0';
 
     do
     {

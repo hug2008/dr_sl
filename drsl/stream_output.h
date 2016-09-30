@@ -22,7 +22,7 @@ inline std::basic_ostream<T> & operator << (std::basic_ostream<T> &stream, const
 {
     const U *temp = str.c_str();
 
-    drsl::uchar32_t ch;
+    drsl::char32_t ch;
     while ((ch = drsl::nextchar(temp)) != '\0')
     {
         stream.put((T)ch);
@@ -43,7 +43,7 @@ inline std::basic_ostream<T> & operator << (std::basic_ostream<T> &stream, const
 {
     drsl::reference_string<U> temp = str;
 
-    drsl::uchar32_t ch;
+    drsl::char32_t ch;
     while ((ch = drsl::nextchar(temp)) != '\0')
     {
         stream.put((T)ch);

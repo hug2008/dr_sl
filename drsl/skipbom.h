@@ -21,7 +21,7 @@ namespace drsl
 *       one is present. If there is no BOM, the pointer is not moved.
 */
 template <typename T>
-inline uchar32_t skipbom(T *&str)
+inline char32_t skipbom(T *&str)
 {
     T *temp = str;
     if (drsl::nextchar(temp) == 0xFEFF)

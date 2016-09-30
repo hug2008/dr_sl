@@ -26,7 +26,7 @@ template <typename T>
 inline void attachbom(T *str, size_t strSize = -1, size_t strLength = -1)
 {
     // We need to determine how many T's our BOM is going to take up.
-    size_t size = charwidth<T>((uchar32_t)0xFEFF);
+    size_t size = charwidth<T>((char32_t)0xFEFF);
 
     // Now we can move all of our character down one spot. First we need to get to
     // the end.

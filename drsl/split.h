@@ -74,7 +74,7 @@ void split(T *str, const T *delimiter, std::vector<reference_string<T> > &list, 
         cur_string.start = str;
         cur_string.end = str;
 
-        uchar32_t ch;
+        char32_t ch;
         while (strLength > 0 && (ch = nextchar(cur_string.end)) != NULL)
         {
             strLength -= charwidth<T>(ch);

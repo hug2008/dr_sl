@@ -32,7 +32,7 @@ inline void _split_path(reference_string<const T> (&dest)[128], size_t &count, c
     count = 0;
 
     const T *temp = path;
-    uchar32_t ch;
+    char32_t ch;
     while (pathLength > 0 && (ch = drsl::nextchar(temp)) != '\0')
     {
         if (ch == '\\' || ch == '/')
@@ -72,8 +72,8 @@ template <typename T>
 inline bool _pair_is_parent_dir(const reference_string<const T> &dir)
 {
     const T *temp = dir.start;
-    uchar32_t ch1 = drsl::nextchar(temp);
-    uchar32_t ch2 = drsl::nextchar(temp);
+    char32_t ch1 = drsl::nextchar(temp);
+    char32_t ch2 = drsl::nextchar(temp);
     if (temp == dir.end && ch1 == '.' && ch2 == '.')
     {
         return true;
@@ -100,7 +100,7 @@ inline size_t _copy_pair_to_str(T *dest, const reference_string<const T> &pair)
         while (temp != pair.end)
         {
             // Grab the next character.
-            uchar32_t ch = drsl::nextchar(temp);
+            char32_t ch = drsl::nextchar(temp);
 
             // Now write the character.
             size_t char_size = writechar(dest, ch);

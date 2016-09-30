@@ -36,7 +36,7 @@ namespace misc
 *       The \c quotes string must be null terminated.
 */
 template <typename T>
-void removequotes(T *str, const T *quotes, uchar32_t escape = '\\', size_t strLength = -1)
+void removequotes(T *str, const T *quotes, char32_t escape = '\\', size_t strLength = -1)
 {
     assert(str != NULL);
     assert(quotes != NULL);
@@ -45,7 +45,7 @@ void removequotes(T *str, const T *quotes, uchar32_t escape = '\\', size_t strLe
     T *temp = str;
 
     // Check the first character. If must be contained in quotes string.
-    uchar32_t quote_ch = nextchar(temp);
+    char32_t quote_ch = nextchar(temp);
     if (findfirstof(quotes, quote_ch) != NULL)
     {
         // Grab the width of our quote character.
@@ -60,10 +60,10 @@ void removequotes(T *str, const T *quotes, uchar32_t escape = '\\', size_t strLe
 
         // The last character we've retrieved. We use this to determine if the character
         // has been escaped.
-        uchar32_t last_ch = '\0';
+        char32_t last_ch = '\0';
 
         // Now we need to loop through each character and watch for a matching quote character.
-        uchar32_t ch;
+        char32_t ch;
         while (strLength > 0 && (ch = nextchar(temp)) != '\0')
         {
             if (ch == quote_ch && last_ch != escape)

@@ -60,7 +60,7 @@ struct TOKEN_OPTIONS
     *   is only required for the appropriate quote type in the given situation. When the escape
     *   character is found outside a quote, it is treated like a normal symbol.
     */
-    uchar32_t escapeCharacter;
+    char32_t escapeCharacter;
 
 
     /**
@@ -142,11 +142,11 @@ inline bool nexttoken(T *&str, reference_string<T> &token, size_t *line, const T
     int type = 0;
 
     // Stores the previous character that was just retrieved.
-    uchar32_t prev_ch = '\0';
+    char32_t prev_ch = '\0';
 
     // The character that has started a quote. If the token is not in a quote, this will
     // be equal to 0.
-    uchar32_t starting_quote_ch = '\0';
+    char32_t starting_quote_ch = '\0';
 
     // Determines if we've found a decimal point in a number. This is only used when type == 2.
     bool found_decimal = false;
@@ -159,7 +159,7 @@ inline bool nexttoken(T *&str, reference_string<T> &token, size_t *line, const T
     // To extract the next token, we need to start looking at each character. We will
     // loop until we reach the end of the string or we break out of the loop.
     T *temp = str;
-    uchar32_t ch;
+    char32_t ch;
     while (strLength > 0 && (ch = nextchar(temp)) != '\0')
     {
         // We need to check which character we've got. If it's a non-printable character,
@@ -314,7 +314,7 @@ inline bool nexttoken(T *&str, reference_string<T> &token, size_t *line, const T
 
                         // We need to make sure that the character after the decimal point is also a number.
                         // If it isn't, the decimal point needs to be considered a seperate token.
-                        uchar32_t next_ch = nextchar(temp);
+                        char32_t next_ch = nextchar(temp);
                         if (!(next_ch >= '0' && next_ch <= '9'))
                         {
                             token.end = str;

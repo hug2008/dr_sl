@@ -28,7 +28,7 @@ namespace search
 template <typename T>
 bool containsnonprintablechar(const T *str, size_t strLength = -1)
 {
-    uchar32_t ch;
+    char32_t ch;
     while (strLength > 0 && (ch = nextchar(str)) != '\0')
     {
         if (ch <= ' ')

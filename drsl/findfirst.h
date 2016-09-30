@@ -24,11 +24,11 @@ namespace drsl
 *   \return                If the character is found, returns a pointer to that character. Otherwise, a NULL pointer is returned.
 */
 template <typename T>
-inline T * findfirst(T *str, uchar32_t character, size_t strLength = -1)
+inline T * findfirst(T *str, char32_t character, size_t strLength = -1)
 {
     T *temp = str;
 
-    uchar32_t ch;
+    char32_t ch;
     while (strLength > 0 && (ch = nextchar(temp)) != '\0')
     {
         if (ch == character)
@@ -45,26 +45,26 @@ inline T * findfirst(T *str, uchar32_t character, size_t strLength = -1)
 
 // Optimized cases.
 #ifdef DRSL_ONLY_ASCII
-inline const char * findfirst(const char *str, uchar32_t character)
+inline const char * findfirst(const char *str, char32_t character)
 {
     return ::strchr(str, character);
 }
-inline char * findfirst(char *str, uchar32_t character)
+inline char * findfirst(char *str, char32_t character)
 {
     return ::strchr(str, character);
 }
 #endif
-inline const wchar_t * findfirst(const wchar_t *str, uchar32_t character)
+inline const wchar_t * findfirst(const wchar_t *str, char32_t character)
 {
     return ::wcschr(str, (wchar_t)character);
 }
-inline wchar_t * findfirst(wchar_t *str, uchar32_t character)
+inline wchar_t * findfirst(wchar_t *str, char32_t character)
 {
     return ::wcschr(str, (wchar_t)character);
 }
 
 template <typename T>
-inline T * findfirst(const reference_string<T> &str, uchar32_t character)
+inline T * findfirst(const reference_string<T> &str, char32_t character)
 {
     return findfirst(str.start, character, length(str));
 }
@@ -96,7 +96,7 @@ inline const T * findfirst(const T *str1, const T *str2, size_t str1Length = -1,
     }
 
     // Grab the first character of our second string.
-    uchar32_t first_char = drsl::getchar(str2, 0);
+    char32_t first_char = drsl::getchar(str2, 0);
 
     for ( ; (str1 = findfirst(str1, first_char, str1Length)) != NULL; nextchar(str1))
     {

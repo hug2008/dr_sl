@@ -43,7 +43,7 @@ inline bool nextline(reference_string<T> &line, T *&str)
     // We need to loop through each character in the string and look for a carriage return
     // and new line character.
     T *temp = str;
-    uchar32_t ch;
+    char32_t ch;
     while ((ch = nextchar(temp)) != '\0')
     {
         // We need to check for both "\r\n" and "\n" lines.

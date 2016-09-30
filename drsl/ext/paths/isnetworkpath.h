@@ -29,7 +29,7 @@ inline bool isnetworkpath(const T *path, size_t pathLength = -1)
     }
 
     // We need to look at the first character. If it is a slash, we need to look at the next one.
-    uchar32_t ch = nextchar(path);
+    char32_t ch = nextchar(path);
     if (ch == '\\' || ch == '/')
     {
         // Grab the next character. If it is also a back slash, we have a network path.

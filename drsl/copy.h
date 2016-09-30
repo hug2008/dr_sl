@@ -146,7 +146,7 @@ inline size_t copy(T *dest, const U *source, size_t destSize = -1, size_t source
     size_t copy_size = 1;
 
     // Now we need to loop through each character in the source and copy over the character.
-    uchar32_t ch;
+    char32_t ch;
     while (destSize > 1 && sourceLength > 0 && (ch = nextchar(source)) != '\0')
     {
         // Variable that stores the width of the current character.

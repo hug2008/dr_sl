@@ -13,10 +13,10 @@ namespace drsl
 {
 
 template <typename T>
-bool _istype_fd(const T *str, size_t strLength, uchar32_t suffix)
+bool _istype_fd(const T *str, size_t strLength, char32_t suffix)
 {
     // The previous character that we've checked.
-    uchar32_t prev_ch = '\0';
+    char32_t prev_ch = '\0';
 
     // Determines if we've yet found a decimal point. We use this to ensure that
     // we don't have more than one decimal point in the number.
@@ -26,14 +26,14 @@ bool _istype_fd(const T *str, size_t strLength, uchar32_t suffix)
     // we dont have a digit.
     bool found_digit = false;
 
-    uchar32_t ch;
+    char32_t ch;
     while (strLength > 0 && (ch = nextchar(str)) != '\0')
     {
         // Stole this check from http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2271.html.
         // Apendix - 23 - Algorithmic optimization vs. hardware optimization.
         // It's essentially the same as isdigit(). We may end up using isdigit() if it helps with
         // internationalisation.
-        if (!((uchar32_t)(ch - '0') <= 9))
+        if (!((char32_t)(ch - '0') <= 9))
         {
             if (ch == '.')
             {
@@ -54,7 +54,7 @@ bool _istype_fd(const T *str, size_t strLength, uchar32_t suffix)
             else
             {
                 // We can have a suffix.
-                if ((uchar32_t)tolower(ch) == suffix)
+                if ((char32_t)tolower(ch) == suffix)
                 {
                     // We need to ensure that the suffix is the last character in the string.
                     if (strLength - charwidth<T>(ch) == 0)
@@ -69,7 +69,7 @@ bool _istype_fd(const T *str, size_t strLength, uchar32_t suffix)
                     else
                     {
                         const T *temp = str;
-                        uchar32_t ch2 = nextchar(temp);
+                        char32_t ch2 = nextchar(temp);
                         if (ch2 == '\0')
                         {
                             if (prev_ch != '.')
@@ -135,20 +135,20 @@ struct _istype<__int64, T>
     static bool call(const T *str, size_t strLength)
     {
         // The previous character that we've checked.
-        uchar32_t prev_ch = '\0';
+        char32_t prev_ch = '\0';
 
         // Determines if we've found a digit. We don't have a real integer if
         // we dont have a digit.
         bool found_digit = false;
 
-        uchar32_t ch;
+        char32_t ch;
         while (strLength > 0 && (ch = nextchar(str)) != '\0')
         {
             // Stole this check from http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2271.html.
             // Apendix - 23 - Algorithmic optimization vs. hardware optimization.
             // It's essentially the same as isdigit(). We may end up using isdigit() if it helps with
             // internationalisation.
-            if (!((uchar32_t)(ch - '0') <= 9))
+            if (!((char32_t)(ch - '0') <= 9))
             {
                 if (!(prev_ch == '\0' && ch == '-'))
                 {
@@ -176,14 +176,14 @@ struct _istype<unsigned __int64, T>
         // we dont have a digit.
         bool found_digit = false;
 
-        uchar32_t ch;
+        char32_t ch;
         while (strLength > 0 && (ch = nextchar(str)) != '\0')
         {
             // Stole this check from http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2271.html.
             // Apendix - 23 - Algorithmic optimization vs. hardware optimization.
             // It's essentially the same as isdigit(). We may end up using isdigit() if it helps with
             // internationalisation.
-            if (!((uchar32_t)(ch - '0') <= 9))
+            if (!((char32_t)(ch - '0') <= 9))
             {
                 return false;
             }

@@ -26,7 +26,7 @@ namespace drsl
 *       If this function returns NULL, the null terminator was retrieved. When this occurs, the string
 *       is _not_ moved forward to the next character (there is no characters after the null terminator).
 */
-inline uchar32_t nextchar_utf8(const char *&str)
+inline char32_t nextchar_utf8(const char *&str)
 {
     assert(str != NULL);
 
@@ -43,7 +43,7 @@ inline uchar32_t nextchar_utf8(const char *&str)
     const char *source = str;
 
     // The character we will eventually be returning.
-    uchar32_t ch = 0;
+    char32_t ch = 0;
 
     // We need to determine the additional bytes that we need to read in order
     // to reconstruct the final character. We can calculate the total number of
@@ -94,7 +94,7 @@ inline uchar32_t nextchar_utf8(const char *&str)
 #endif
 }
 
-inline uchar32_t nextchar_utf16(const char16_t *&str)
+inline char32_t nextchar_utf16(const char16_t *&str)
 {
     assert(str != NULL);
 
@@ -111,7 +111,7 @@ inline uchar32_t nextchar_utf16(const char16_t *&str)
     const char16_t *source = str;
 
     // The character that we'll eventually be returning.
-    uchar32_t ch = (uchar32_t)(uchar16_t)*source++;
+    char32_t ch = (char32_t)(char16_t)*source++;
 
     // We need to check if we have a surrogate pair. If we do, we need to do a conversion.
     // We only want to do this if the character we just retrieved wasn't a null terminator,
@@ -126,7 +126,7 @@ inline uchar32_t nextchar_utf16(const char16_t *&str)
             {
                 // Grab our next 16-bits. This must be the low surrogate. If it isn't, we
                 // have an error and need to return 0.
-                uchar32_t ch2 = (uchar32_t)(uchar16_t)*source;
+                char32_t ch2 = (char32_t)(char16_t)*source;
 
                 if (ch2 >= UNI_SUR_LOW_START && ch2 <= UNI_SUR_LOW_END)
                 {
@@ -155,7 +155,7 @@ inline uchar32_t nextchar_utf16(const char16_t *&str)
 #endif
 }
 
-inline uchar32_t nextchar_utf32(const char32_t *&str)
+inline char32_t nextchar_utf32(const char32_t *&str)
 {
     assert(str != NULL);
 
@@ -181,19 +181,19 @@ inline uchar32_t nextchar_utf32(const char32_t *&str)
 *       If this function returns NULL, the null terminator was retrieved. When this occurs, the string
 *       is _not_ moved forward to the next character (there is no characters after the null terminator).
 */
-inline uchar32_t nextchar(const char *&str)
+inline char32_t nextchar(const char *&str)
 {
     return nextchar_utf8(str);
 }
-inline uchar32_t nextchar(const char16_t *&str)
+inline char32_t nextchar(const char16_t *&str)
 {
     return nextchar_utf16(str);
 }
-inline uchar32_t nextchar(const char32_t *&str)
+inline char32_t nextchar(const char32_t *&str)
 {
     return nextchar_utf32(str);
 }
-inline uchar32_t nextchar(const wchar_t *&str)
+inline char32_t nextchar(const wchar_t *&str)
 {
     switch (sizeof(wchar_t))
     {
@@ -205,7 +205,7 @@ inline uchar32_t nextchar(const wchar_t *&str)
 }
 
 template <typename T>
-inline uchar32_t nextchar(T *&str)
+inline char32_t nextchar(T *&str)
 {
     return nextchar((const T *&)str);
 }
@@ -221,7 +221,7 @@ inline uchar32_t nextchar(T *&str)
 *       pointer. When this occurs, the start pointer is _not_ modified.
 */
 template <typename T>
-inline uchar32_t nextchar(reference_string<T> &str)
+inline char32_t nextchar(reference_string<T> &str)
 {
     if (str.start >= str.end)
     {

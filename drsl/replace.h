@@ -26,7 +26,7 @@ namespace drsl
 *       store the modified string.
 */
 template <typename T>
-size_t replace(T *str, uchar32_t oldChar, uchar32_t newChar, size_t strSize = -1, size_t strLength = -1)
+size_t replace(T *str, char32_t oldChar, char32_t newChar, size_t strSize = -1, size_t strLength = -1)
 {
     assert(str != NULL);
 
@@ -45,7 +45,7 @@ size_t replace(T *str, uchar32_t oldChar, uchar32_t newChar, size_t strSize = -1
     size_t count = 1;
 
     // We need to loop through each character and replace it.
-    uchar32_t ch;
+    char32_t ch;
     while (strSize > 1 && strLength > 0 && (ch = nextchar(temp)) != '\0')
     {
         if (ch == oldChar)

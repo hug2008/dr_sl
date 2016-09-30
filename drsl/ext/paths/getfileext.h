@@ -50,7 +50,7 @@ inline size_t getfileext(T *dest, const T *src, size_t srcLength = -1)
     // by storing each occurance of a full stop that we find. The one that stored when
     // we reach the end of the file will be the last one.
     const T *last_pos = NULL;
-    uchar32_t ch;
+    char32_t ch;
     while (srcLength > 0 && (ch = nextchar(src)) != '\0')
     {
         if (ch == '.')
@@ -99,7 +99,7 @@ inline void getfileext(slow_string<T> &dest, const T *src, size_t srcLength = -1
     // by storing each occurance of a full stop that we find. The one that stored when
     // we reach the end of the file will be the last one.
     const T *last_pos = NULL;
-    uchar32_t ch;
+    char32_t ch;
     while (srcLength > 0 && (ch = drsl::nextchar(src)) != '\0')
     {
         if (ch == '.')
@@ -167,7 +167,7 @@ void getfileext(reference_string<T> &dest, T *src, size_t srcLength = -1)
     // by storing each occurance of a full stop that we find. The one that stored when
     // we reach the end of the file will be the last one.
     T *last_pos = NULL;
-    uchar32_t ch;
+    char32_t ch;
     while (srcLength > 0 && (ch = nextchar(src)) != '\0')
     {
         if (ch == '.')

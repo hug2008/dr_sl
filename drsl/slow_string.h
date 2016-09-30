@@ -286,7 +286,7 @@ public:
     *   \param  character [in]  The character to append.
     *   \return                 A reference to this string.
     */
-    slow_string<T> & append(uchar32_t character)
+    slow_string<T> & append(char32_t character)
     {
         // First we need to determine how many T's to increase the buffer by.
         size_t added_size = drsl::charwidth<T>(character);
@@ -354,7 +354,7 @@ public:
     *       as it must iterate through each character. We should probably try to come
     *       up with a quicker way of doing this...
     */
-    uchar32_t getchar(size_t index)
+    char32_t getchar(size_t index)
     {
         assert(this->length() > index);
 
@@ -537,7 +537,7 @@ public:
     *   \param  character [in] The character to append.
     *   \return                A reference to this string.
     */
-    slow_string<T> & operator +=(uchar32_t character)
+    slow_string<T> & operator +=(char32_t character)
     {
         return this->append(character);
     }
@@ -596,7 +596,7 @@ public:
     *   \param  character [in]  The character to be appended to the end of the new string.
     *   \return                 A new string equal to this string with the input character appeneded to the end.
     */
-    slow_string<T> operator +(uchar32_t character) const
+    slow_string<T> operator +(char32_t character) const
     {
         slow_string<T> new_str(*this);
         return new_str += character;

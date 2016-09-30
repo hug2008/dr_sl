@@ -8,10 +8,6 @@
 
 namespace drsl
 {
-typedef unsigned short  uchar16_t;
-typedef unsigned long   uchar32_t;
-
-
 // Enumerator for different locales. These are used for locale dependant routines.
 /*enum locale
 {

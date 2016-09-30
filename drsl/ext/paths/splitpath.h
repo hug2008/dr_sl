@@ -33,7 +33,7 @@ void splitpath(T *path, reference_string<T> &folder, reference_string<T> &file, 
     // The start of the folder is always at the start of the string.
     folder.start = folder.end = path;
 
-    uchar32_t ch;
+    char32_t ch;
     while (pathLength > 0 && (ch = drsl::nextchar(path)) != '\0')
     {
         if (ch == '/' || ch == '\\')
