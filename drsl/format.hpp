@@ -1,8 +1,5 @@
-/**
-*   \file   format.h
-*   \author Dave Reid
-*   \brief  Header file for format() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_FORMAT
 #define DRSL_FORMAT
 

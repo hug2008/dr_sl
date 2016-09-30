@@ -1,8 +1,5 @@
-/**
-*   \file   stream_output.h
-*   \author Dave Reid
-*   \brief  Header file for outputting different strings to C++ output streams.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_STREAMOUTPUT
 #define DRSL_STREAMOUTPUT
 

@@ -1,8 +1,6 @@
-/**
-*   \file   slow_string.h
-*   \author Dave Reid
-*   \brief  Slow string implementation of the string class.
-*
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
+/*
 *   The slow string implementation is essentially a wrapper around a C-style string.
 *   It contains only a single property - a pointer to the content of the string. This
 *   implementation is designed to keep memory consumption to a minumum.

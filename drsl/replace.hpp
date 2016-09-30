@@ -1,8 +1,5 @@
-/**
-*   \file   replace.h
-*   \author Dave Reid
-*   \brief  Header file for replace() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_REPLACE
 #define DRSL_REPLACE
 

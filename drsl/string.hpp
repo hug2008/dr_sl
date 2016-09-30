@@ -1,8 +1,5 @@
-/**
-*   \file   string.h
-*   \author Dave Reid
-*   \brief  Header file for the string classes.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_STRING
 #define DRSL_STRING
 

@@ -1,8 +1,5 @@
-/**
-*   \file   containsprintablechar.h
-*   \author Dave Reid
-*   \brief  Header file for the containsprintablechar() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_SEARCH_CONTAINSPRINTABLECHAR
 #define DRSL_SEARCH_CONTAINSPRINTABLECHAR
 

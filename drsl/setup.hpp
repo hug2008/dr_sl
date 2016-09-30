@@ -1,8 +1,5 @@
-/**
-*   \file   setup.h
-*   \author Dave Reid
-*   \brief  Header file for compiler and platform macros.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_SETUP
 #define DRSL_SETUP
 

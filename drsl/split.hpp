@@ -1,8 +1,5 @@
-/**
-*   \file   split.h
-*   \author Dave Reid
-*   \brief  Header file for split() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_SPLIT
 #define DRSL_SPLIT
 

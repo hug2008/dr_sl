@@ -1,8 +1,5 @@
-/**
-*   \file   splitpath.h
-*   \author Dave Reid
-*   \brief  Header file for the splitpath() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PATHS_SPLITPATH
 #define DRSL_PATHS_SPLITPATH
 

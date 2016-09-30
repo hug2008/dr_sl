@@ -1,8 +1,5 @@
-/**
-*   \file   copy.h
-*   \author Dave Reid
-*   \brief  Header file for copy() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_COPY
 #define DRSL_COPY
 

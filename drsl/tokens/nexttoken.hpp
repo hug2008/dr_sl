@@ -1,8 +1,5 @@
-/**
-*   \file   nexttoken.h
-*   \author Dave Reid
-*   \brief  Header file for nexttoken() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_TOKENS_NEXTTOKEN
 #define DRSL_TOKENS_NEXTTOKEN
 

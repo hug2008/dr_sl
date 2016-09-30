@@ -1,8 +1,5 @@
-/**
-*   \file   drsl.h
-*   \author Dave Reid
-*   \brief  Primary header file for DRSL.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL
 #define DRSL
 

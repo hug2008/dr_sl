@@ -1,8 +1,5 @@
-/**
-*   \brief  absolute.h
-*   \author Dave Reid
-*   \brief  Header file for the absolute() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PATHS_ABSOLUTE
 #define DRSL_PATHS_ABSOLUTE
 

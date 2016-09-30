@@ -1,13 +1,8 @@
-/**
-*   \file   _private.h
-*   \author Dave Reid
-*   \brief  Header file for private UTF encoded string functionality.
-*
-*   Some of the code here is taken from ftp://www.unicode.org/Public/PROGRAMS/CVTUTF/.
-*   The full copyright notice can be found at the bottom of this document.
-*
-*   The functions in this file should not be used from outside DRSL.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+//
+// Some of the code here is taken from ftp://www.unicode.org/Public/PROGRAMS/CVTUTF/. The full copyright notice can
+// be found at the bottom of this document.
+
 #ifndef DRSL_UTFPRIVATE
 #define DRSL_UTFPRIVATE
 

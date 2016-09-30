@@ -1,8 +1,5 @@
-/**
-*   \file   nextchar.h
-*   \author Dave Reid
-*   \brief  Header file for the nextchar() family of functions.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_NEXTCHAR
 #define DRSL_NEXTCHAR
 

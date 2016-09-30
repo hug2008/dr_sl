@@ -1,8 +1,5 @@
-/**
-*   \file   getchar.h
-*   \author Dave Reid
-*   \brief  Header file for getchar() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_GETCHAR
 #define DRSL_GETCHAR
 

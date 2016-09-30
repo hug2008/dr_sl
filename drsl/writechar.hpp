@@ -1,8 +1,5 @@
-/**
-*   \brief  writechar.h
-*   \author Dave Reid
-*   \brief  Header file for the writechar() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_WRITECHAR
 #define DRSL_WRITECHAR
 

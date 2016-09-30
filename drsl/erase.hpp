@@ -1,8 +1,5 @@
-/**
-*   \file   erase.h
-*   \author Dave Reid
-*   \brief  Header file for erase() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_ERASE
 #define DRSL_ERASE
 

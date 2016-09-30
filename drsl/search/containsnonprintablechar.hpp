@@ -1,8 +1,5 @@
-/**
-*   \file   containsnonprintablechar.h
-*   \author Dave Reid
-*   \brief  Header file for the containsnonprintablechar() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
 #define DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
 

@@ -1,8 +1,5 @@
-/**
-*   \brief  charwidth.h
-*   \author Dave Reid
-*   \brief  Header file for the charwidth() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_CHARWIDTH
 #define DRSL_CHARWIDTH
 

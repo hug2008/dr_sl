@@ -1,8 +1,5 @@
-/**
-*   \file   extracttokens.h
-*   \author Dave Reid
-*   \brief  Header file for extracttokens.h implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_TOKENS_EXTRACTTOKENS
 #define DRSL_TOKENS_EXTRACTTOKENS
 

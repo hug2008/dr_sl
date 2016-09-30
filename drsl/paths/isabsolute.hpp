@@ -1,8 +1,5 @@
-/**
-*   \brief  isabsolute.h
-*   \author Dave Reid
-*   \brief  Header file for the isabsolute() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PATHS_ISABSOLUTE
 #define DRSL_PATHS_ISABSOLUTE
 

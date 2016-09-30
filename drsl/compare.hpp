@@ -1,8 +1,5 @@
-/**
-*   \file   compare.h
-*   \author Dave Reid
-*   \brief  Header file for compare() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_STRCMP
 #define DRSL_STRCMP
 

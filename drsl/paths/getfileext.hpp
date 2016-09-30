@@ -1,8 +1,5 @@
-/**
-*   \brief  getfileext.h
-*   \author Dave Reid
-*   \brief  Header file for the getfileext() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PATHS_GETFILEEXT
 #define DRSL_PATHS_GETFILEEXT
 

@@ -1,8 +1,5 @@
-/**
-*   \file   removequotes.h
-*   \author Dave Reid
-*   \brief  Header file for removequotes() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_MISC_REMOVEQUOTES
 #define DRSL_MISC_REMOVEQUOTES
 

@@ -1,8 +1,5 @@
-/**
-*   \file   parse.h
-*   \author Dave Reid
-*   \brief  Header file for parse() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PARSE
 #define DRSL_PARSE
 

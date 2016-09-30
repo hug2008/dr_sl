@@ -1,8 +1,5 @@
-/**
-*   \file   reference_string.h
-*   \author Dave Reid
-*   \brief  Header file for the reference_string structure.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_REFERENCESTRING
 #define DRSL_REFERENCESTRING
 

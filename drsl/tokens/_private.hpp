@@ -1,8 +1,5 @@
-/**
-*   \file   _private.h
-*   \author Dave Reid
-*   \brief  Private header file for the tokens extension.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_TOKENS_PRIVATE
 #define DRSL_TOKENS_PRIVATE
 

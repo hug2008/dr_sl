@@ -1,8 +1,5 @@
-/**
-*   \file   tostring.h
-*   \author Dave Reid
-*   \brief  Header file for converting data types to strings.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_TOSTRING
 #define DRSL_TOSTRING
 

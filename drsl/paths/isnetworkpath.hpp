@@ -1,8 +1,5 @@
-/**
-*   \brief  isnetworkpath.h
-*   \author Dave Reid
-*   \brief  Header file for the isnetworkpath() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PATHS_ISNETWORKPATH
 #define DRSL_PATHS_ISNETWORKPATH
 

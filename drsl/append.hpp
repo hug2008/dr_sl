@@ -1,8 +1,5 @@
-/**
-*   \file   append.h
-*   \author Dave Reid
-*   \brief  Header file for append() implementations.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_APPEND
 #define DRSL_APPEND
 

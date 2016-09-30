@@ -1,8 +1,5 @@
-/**
-*   \brief  isrelative.h
-*   \author Dave Reid
-*   \brief  Header file for the isrelative() implementation.
-*/
+// Copyright (C) 2016 David Reid. See included LICENSE file.
+
 #ifndef DRSL_PATHS_ISRELATIVE
 #define DRSL_PATHS_ISRELATIVE
 
