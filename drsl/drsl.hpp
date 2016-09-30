@@ -19,7 +19,6 @@
 #include <vector>
 
 #include "setup.hpp"
-#include "types.hpp"
 #include "_private.hpp"
 #include "reference_string.hpp"
 #include "nextchar.hpp"
