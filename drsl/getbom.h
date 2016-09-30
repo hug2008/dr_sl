@@ -23,7 +23,7 @@ namespace drsl
 template <typename T>
 inline char32_t getbom(T *str)
 {
-    T *temp;
+    T *temp = str;
     if (drsl::nextchar(temp) == 0xFEFF)
     {
         return 0xFEFF;
