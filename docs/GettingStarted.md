@@ -5,9 +5,9 @@ Using dr_sl
 -----------
 dr_sl is a header library, so you need only include `drsl/drsl.h`. There is no need to link against any libraries.
 
-To begin using dr_sl, simply include the file `<drsl/drsl.h>`, like so:
+To begin using dr_sl, simply include the file `<drsl/drsl.hpp>`, like so:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 ```
 
 All of the functionality in dr_sl is under the `drsl` namespace.

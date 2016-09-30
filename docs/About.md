@@ -57,7 +57,7 @@ This example demonstrates how to use traditional C-like string manipulation rout
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()
@@ -99,7 +99,7 @@ This simple example demonstrates the use of dr_sl's `std::string`-like string cl
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()

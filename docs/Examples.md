@@ -7,7 +7,7 @@ This example demonstrates how to use traditional C-like string manipulation rout
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()
@@ -50,7 +50,7 @@ This example demonstrates dr_sl's ability to convert between different types of 
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()
@@ -87,7 +87,7 @@ This example demonstrates some simple operations for working with UTF encoded st
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()
@@ -135,7 +135,7 @@ This example will show how easy it is to convert a string between different UTF 
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()
@@ -175,7 +175,7 @@ This simple example demonstrates the use of dr_sl's `std::string`-like string cl
 
 Code:
 ```c++
-#include <drsl/drsl.h>
+#include <drsl/drsl.hpp>
 #include <iostream>
 
 int main()
