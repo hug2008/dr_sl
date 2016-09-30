@@ -24,9 +24,6 @@ it those issues over time.
 
 About dr_sl
 ===========
-
-Introduction
-------------
 dr_sl is a C++ header library for working with strings.
 
 It's primary goal is to ease the pain with using Unicode strings in C++. It has support for UTF-8, UTF-16 and UTF-32 string encodings.
@@ -269,11 +266,8 @@ int main()
 
     std::cout << std::endl;
 
-    std::cout << "Number of char's in str1: " << 
-        drsl::length(str) << std::endl;
-
-    std::cout << "Number of characters in str1: " << 
-        drsl::charcount(str) << std::endl << std::endl;
+    std::cout << "Number of char's in str1: " <<  drsl::length(str) << std::endl;
+    std::cout << "Number of characters in str1: " <<  drsl::charcount(str) << std::endl << std::endl;
 
     return 0;
 }
