@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for appendsize() implementations.
 */
-#ifndef __DRSL_APPENDSIZE_H_
-#define __DRSL_APPENDSIZE_H_
+#ifndef DRSL_APPENDSIZE
+#define DRSL_APPENDSIZE
 
 #include "append.h"
 
@@ -31,4 +31,4 @@ inline size_t appendsize(const T *str1, const T *str2, size_t str1Length = -1, s
 
 }
 
-#endif // __DRSL_APPENDSIZE_H_
+#endif // DRSL_APPENDSIZE

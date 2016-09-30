@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for findfirst() implementations.
 */
-#ifndef __DRSL_FINDFIRST_H_
-#define __DRSL_FINDFIRST_H_
+#ifndef DRSL_FINDFIRST
+#define DRSL_FINDFIRST
 
 #include <string.h>
 #include "getchar.h"
@@ -148,4 +148,4 @@ inline T * findfirst(const reference_string<T> &str1, const reference_string<T> 
 
 }
 
-#endif // __DRSL_FINDFIRST_H_
+#endif // DRSL_FINDFIRST

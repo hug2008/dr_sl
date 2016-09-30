@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the reference_string structure.
 */
-#ifndef __DRSL_REFERENCESTRING_H_
-#define __DRSL_REFERENCESTRING_H_
+#ifndef DRSL_REFERENCESTRING
+#define DRSL_REFERENCESTRING
 
 namespace drsl
 {
@@ -41,4 +41,4 @@ struct reference_string
 
 }
 
-#endif // __DRSL_REFERENCESTRING_H_
+#endif // DRSL_REFERENCESTRING

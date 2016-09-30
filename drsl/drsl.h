@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Primary header file for DRSL.
 */
-#ifndef __DRSL_H_
-#define __DRSL_H_
+#ifndef DRSL
+#define DRSL
 
 #include "parse.h"
 #include "setup.h"
@@ -60,4 +60,4 @@
 
 #include "misc/removequotes.h"
 
-#endif // __DRSL_H_
+#endif // DRSL

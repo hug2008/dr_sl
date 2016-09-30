@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for compiler and platform macros.
 */
-#ifndef __DRSL_SETUP_H_
-#define __DRSL_SETUP_H_
+#ifndef DRSL_SETUP
+#define DRSL_SETUP
 
 // The different bitness for various things.
 #define BITS8               0x00000008
@@ -123,4 +123,4 @@
 #endif	// PLATFORM
 
 
-#endif // __DRSL_SETUP_H_
+#endif // DRSL_SETUP

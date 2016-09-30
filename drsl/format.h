@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for format() implementations.
 */
-#ifndef __DRSL_FORMAT_H_
-#define __DRSL_FORMAT_H_
+#ifndef DRSL_FORMAT
+#define DRSL_FORMAT
 
 #include "vformat.h"
 
@@ -58,4 +58,4 @@ inline int format(T (&dest)[destSize], const T *format, ...)
 
 }
 
-#endif // __DRSL_FORMAT_H_
+#endif // DRSL_FORMAT

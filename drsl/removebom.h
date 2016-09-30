@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for removebom() implementations.
 */
-#ifndef __DRSL_REMOVEBOM_H_
-#define __DRSL_REMOVEBOM_H_
+#ifndef DRSL_REMOVEBOM
+#define DRSL_REMOVEBOM
 
 #include "skipbom.h"
 
@@ -48,4 +48,4 @@ inline void removebom(T *str)
 
 }
 
-#endif // __DRSL_REMOVEBOM_H_
+#endif // DRSL_REMOVEBOM

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the containsprintablechar() implementation.
 */
-#ifndef __DRSL_SEARCH_CONTAINSPRINTABLECHAR
-#define __DRSL_SEARCH_CONTAINSPRINTABLECHAR
+#ifndef DRSL_SEARCH_CONTAINSPRINTABLECHAR
+#define DRSL_SEARCH_CONTAINSPRINTABLECHAR
 
 namespace drsl
 {
@@ -46,4 +46,4 @@ inline bool containsprintablechar(const reference_string<T> &str)
 }
 }
 
-#endif // __DRSL_SEARCH_CONTAINSPRINTABLECHAR
+#endif // DRSL_SEARCH_CONTAINSPRINTABLECHAR

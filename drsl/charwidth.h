@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the charwidth() implementation.
 */
-#ifndef __DRSL_CHARWIDTH_H_
-#define __DRSL_CHARWIDTH_H_
+#ifndef DRSL_CHARWIDTH
+#define DRSL_CHARWIDTH
 
 #include "_private.h"
 
@@ -94,4 +94,4 @@ template <> inline size_t charwidth<wchar_t>(char32_t character)
 
 }
 
-#endif // __DRSL_CHARWIDTH_H_
+#endif // DRSL_CHARWIDTH

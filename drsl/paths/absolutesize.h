@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the absolutesize() implementation.
 */
-#ifndef __DRSL_PATHS_ABSOLUTESIZE_H_
-#define __DRSL_PATHS_ABSOLUTESIZE_H_
+#ifndef DRSL_PATHS_ABSOLUTESIZE
+#define DRSL_PATHS_ABSOLUTESIZE
 
 namespace drsl
 {
@@ -28,4 +28,4 @@ inline size_t absolutesize(const T *path, const T *base, size_t pathLength = -1,
 }
 }
 
-#endif // __DRSL_PATHS_ABSOLUTESIZE_H_
+#endif // DRSL_PATHS_ABSOLUTESIZE

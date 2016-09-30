@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for nextline() implementations.
 */
-#ifndef __DRSL_NEXTLINE_H_
-#define __DRSL_NEXTLINE_H_
+#ifndef DRSL_NEXTLINE
+#define DRSL_NEXTLINE
 
 #include <assert.h>
 #include "nextchar.h"
@@ -80,4 +80,4 @@ inline bool nextline(reference_string<T> &line, T *&str)
 
 }
 
-#endif // __DRSL_NEXTLINE_H_
+#endif // DRSL_NEXTLINE

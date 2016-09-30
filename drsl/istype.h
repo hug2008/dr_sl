@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for istype() implementations.
 */
-#ifndef __DRSL_ISTYPE_H_
-#define __DRSL_ISTYPE_H_
+#ifndef DRSL_ISTYPE
+#define DRSL_ISTYPE
 
 #include "nextchar.h"
 #include <ctype.h>      // For tolower().
@@ -308,4 +308,4 @@ inline bool istype(const T *str, size_t strLength = -1)
 
 }
 
-#endif // __DRSL_ISTYPE_H_
+#endif // DRSL_ISTYPE

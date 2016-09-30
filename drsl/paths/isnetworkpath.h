@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the isnetworkpath() implementation.
 */
-#ifndef __DRSL_PATHS_ISNETWORKPATH_H_
-#define __DRSL_PATHS_ISNETWORKPATH_H_
+#ifndef DRSL_PATHS_ISNETWORKPATH
+#define DRSL_PATHS_ISNETWORKPATH
 
 namespace drsl
 {
@@ -47,4 +47,4 @@ inline bool isnetworkpath(const T *path, size_t pathLength = -1)
 }
 }
 
-#endif // __DRSL_PATHS_ISNETWORKPATH_H_
+#endif // DRSL_PATHS_ISNETWORKPATH

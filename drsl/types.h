@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the custom data types for strings.
 */
-#ifndef __DRSL_TYPES_H_
-#define __DRSL_TYPES_H_
+#ifndef DRSL_TYPES
+#define DRSL_TYPES
 
 namespace drsl
 {
@@ -44,4 +44,4 @@ namespace drsl
 
 }
 
-#endif // __DRSL_TYPES_H_
+#endif // DRSL_TYPES

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the absolute() implementation.
 */
-#ifndef __DRSL_PATHS_ABSOLUTE_H_
-#define __DRSL_PATHS_ABSOLUTE_H_
+#ifndef DRSL_PATHS_ABSOLUTE
+#define DRSL_PATHS_ABSOLUTE
 
 namespace drsl
 {
@@ -168,4 +168,4 @@ inline wstring absolute(const wchar_t *path, const wchar_t *base)
 }
 }
 
-#endif // __DRSL_PATHS_ABSOLUTE_H_
+#endif // DRSL_PATHS_ABSOLUTE

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for non-public functions for the paths extension.
 */
-#ifndef __DRSL_PATHS_PRIVATE_H_
-#define __DRSL_PATHS_PRIVATE_H_
+#ifndef DRSL_PATHS_PRIVATE
+#define DRSL_PATHS_PRIVATE
 
 // Defines the directory slash for platforms.
 #if (PLATFORM == PLATFORM_WINDOWS)
@@ -150,4 +150,4 @@ inline size_t _write_parent_dir(T *&dest)
 }
 }
 
-#endif // __DRSL_PATHS_PRIVATE_H_
+#endif // DRSL_PATHS_PRIVATE

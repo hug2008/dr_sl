@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for erase() implementations.
 */
-#ifndef __DRSL_ERASE_H_
-#define __DRSL_ERASE_H_
+#ifndef DRSL_ERASE
+#define DRSL_ERASE
 
 #include "nextchar.h"
 #include "length.h"
@@ -67,4 +67,4 @@ inline void erase(reference_string<T> &str, size_t start, size_t count)
 
 }
 
-#endif // __DRSL_ERASE_H_
+#endif // DRSL_ERASE

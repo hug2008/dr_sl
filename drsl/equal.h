@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for equal() implementations.
 */
-#ifndef __DRSL_EQUAL_H_
-#define __DRSL_EQUAL_H_
+#ifndef DRSL_EQUAL
+#define DRSL_EQUAL
 
 #include "types.h"
 #include "charcount.h"
@@ -139,4 +139,4 @@ inline bool equal(const reference_string<T> str1, const U *str2, bool caseSensit
 
 }
 
-#endif // __DRSL_EQUAL_H_
+#endif // DRSL_EQUAL

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the isabsolute() implementation.
 */
-#ifndef __DRSL_PATHS_ISABSOLUTE_H_
-#define __DRSL_PATHS_ISABSOLUTE_H_
+#ifndef DRSL_PATHS_ISABSOLUTE
+#define DRSL_PATHS_ISABSOLUTE
 
 namespace drsl
 {
@@ -69,4 +69,4 @@ inline bool isabsolute(const T *path, size_t pathLength = -1)
 }
 }
 
-#endif // __DRSL_PATHS_ISABSOLUTE_H_
+#endif // DRSL_PATHS_ISABSOLUTE

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the string classes.
 */
-#ifndef __DRSL_STRING_H_
-#define __DRSL_STRING_H_
+#ifndef DRSL_STRING
+#define DRSL_STRING
 
 #include "slow_string.h"
 
@@ -27,4 +27,4 @@ typedef slow_string<wchar_t> wstring;
 
 }
 
-#endif // __DRSL_STRING_H_
+#endif // DRSL_STRING

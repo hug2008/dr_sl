@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for attachbom() implementations.
 */
-#ifndef __DRSL_ATTACHBOM_H_
-#define __DRSL_ATTACHBOM_H_
+#ifndef DRSL_ATTACHBOM
+#define DRSL_ATTACHBOM
 
 #include "types.h"
 #include "_private.h"
@@ -58,4 +58,4 @@ inline void attachbom(T *str, size_t strSize = -1, size_t strLength = -1)
 
 }
 
-#endif // __DRSL_ATTACHBOM_H_
+#endif // DRSL_ATTACHBOM

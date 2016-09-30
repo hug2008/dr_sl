@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for skipbom() implementations.
 */
-#ifndef __DRSL_SKIPBOM_H_
-#define __DRSL_SKIPBOM_H_
+#ifndef DRSL_SKIPBOM
+#define DRSL_SKIPBOM
 
 #include "nextchar.h"
 
@@ -35,4 +35,4 @@ inline char32_t skipbom(T *&str)
 
 }
 
-#endif // __DRSL_SKIPBOM_H_
+#endif // DRSL_SKIPBOM

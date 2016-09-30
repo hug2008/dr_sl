@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for parse() implementations.
 */
-#ifndef __DRSL_PARSE_H_
-#define __DRSL_PARSE_H_
+#ifndef DRSL_PARSE
+#define DRSL_PARSE
 
 #include <stdlib.h>
 #include <locale.h>
@@ -226,4 +226,4 @@ inline U parse(const reference_string<T> &str)
 
 }
 
-#endif // __DRSL_PARSE_H_
+#endif // DRSL_PARSE

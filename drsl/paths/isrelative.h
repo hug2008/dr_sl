@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the isrelative() implementation.
 */
-#ifndef __DRSL_PATHS_ISRELATIVE_H_
-#define __DRSL_PATHS_ISRELATIVE_H_
+#ifndef DRSL_PATHS_ISRELATIVE
+#define DRSL_PATHS_ISRELATIVE
 
 namespace drsl
 {
@@ -29,4 +29,4 @@ inline bool isrelative(const T *path, size_t pathLength = -1)
 }
 }
 
-#endif // __DRSL_PATHS_ISRELATIVE_H_
+#endif // DRSL_PATHS_ISRELATIVE

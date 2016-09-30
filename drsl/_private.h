@@ -8,8 +8,8 @@
 *
 *   The functions in this file should not be used from outside DRSL.
 */
-#ifndef __DRSL_UTFPRIVATE_H_
-#define __DRSL_UTFPRIVATE_H_
+#ifndef DRSL_UTFPRIVATE
+#define DRSL_UTFPRIVATE
 
 #include <assert.h>
 #include "types.h"
@@ -282,7 +282,7 @@ void _movestrdown(T *source, size_t count, size_t sourceSize)
 
 }
 
-#endif // __DRSL_UTFPRIVATE_H_
+#endif // DRSL_UTFPRIVATE
 
 
 

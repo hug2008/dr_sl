@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the getfileext() implementation.
 */
-#ifndef __DRSL_PATHS_GETFILEEXT_H_
-#define __DRSL_PATHS_GETFILEEXT_H_
+#ifndef DRSL_PATHS_GETFILEEXT
+#define DRSL_PATHS_GETFILEEXT
 
 namespace drsl
 {
@@ -190,4 +190,4 @@ void getfileext(reference_string<T> &dest, T *src, size_t srcLength = -1)
 }
 }
 
-#endif // __DRSL_PATHS_GETFILEEXT_H_
+#endif // DRSL_PATHS_GETFILEEXT

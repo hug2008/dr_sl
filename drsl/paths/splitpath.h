@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the splitpath() implementation.
 */
-#ifndef __DRSL_PATHS_SPLITPATH_H_
-#define __DRSL_PATHS_SPLITPATH_H_
+#ifndef DRSL_PATHS_SPLITPATH
+#define DRSL_PATHS_SPLITPATH
 
 namespace drsl
 {
@@ -51,4 +51,4 @@ void splitpath(T *path, reference_string<T> &folder, reference_string<T> &file, 
 }
 }
 
-#endif  // __DRSL_PATHS_SPLITPATH_H_
+#endif  // DRSL_PATHS_SPLITPATH

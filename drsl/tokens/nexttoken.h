@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for nexttoken() implementations.
 */
-#ifndef __DRSL_TOKENS_NEXTTOKEN_H_
-#define __DRSL_TOKENS_NEXTTOKEN_H_
+#ifndef DRSL_TOKENS_NEXTTOKEN
+#define DRSL_TOKENS_NEXTTOKEN
 
 namespace drsl
 {
@@ -393,4 +393,4 @@ inline bool nexttoken(reference_string<T> &str, reference_string<T> &token, size
 }
 }
 
-#endif // __DRSL_TOKENS_NEXTTOKEN_H_
+#endif // DRSL_TOKENS_NEXTTOKEN

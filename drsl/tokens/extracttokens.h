@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for extracttokens.h implementations.
 */
-#ifndef __DRSL_TOKENS_EXTRACTTOKENS_H_
-#define __DRSL_TOKENS_EXTRACTTOKENS_H_
+#ifndef DRSL_TOKENS_EXTRACTTOKENS
+#define DRSL_TOKENS_EXTRACTTOKENS
 
 namespace drsl
 {
@@ -52,4 +52,4 @@ void extracttokens(T *str, std::vector<reference_string<T> > &tokens, std::vecto
 }
 }
 
-#endif // __DRSL_TOKENS_EXTRACTTOKENS_H_
+#endif // DRSL_TOKENS_EXTRACTTOKENS

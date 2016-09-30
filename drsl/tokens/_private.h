@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Private header file for the tokens extension.
 */
-#ifndef __DRSL_TOKENS_PRIVATE_H_
-#define __DRSL_TOKENS_PRIVATE_H_
+#ifndef DRSL_TOKENS_PRIVATE
+#define DRSL_TOKENS_PRIVATE
 
 namespace drsl
 {
@@ -196,4 +196,4 @@ inline bool _check_ignore_block_end(T *&str, const reference_string<T> &start, T
 
 }
 
-#endif // __DRSL_TOKENS_PRIVATE_H_
+#endif // DRSL_TOKENS_PRIVATE

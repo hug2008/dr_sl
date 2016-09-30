@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the getfileextsize() implementation.
 */
-#ifndef __DRSL_PATHS_GETFILEEXTSIZE_H_
-#define __DRSL_PATHS_GETFILEEXTSIZE_H_
+#ifndef DRSL_PATHS_GETFILEEXTSIZE
+#define DRSL_PATHS_GETFILEEXTSIZE
 
 namespace drsl
 {
@@ -26,4 +26,4 @@ inline size_t getfileextsize(const T *str, size_t strLength = -1)
 }
 }
 
-#endif // __DRSL_PATHS_GETFILEEXTSIZE_H_
+#endif // DRSL_PATHS_GETFILEEXTSIZE

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the writechar() implementation.
 */
-#ifndef __DRSL_WRITECHAR_H_
-#define __DRSL_WRITECHAR_H_
+#ifndef DRSL_WRITECHAR
+#define DRSL_WRITECHAR
 
 #include "_private.h"
 #include "charwidth.h"
@@ -148,4 +148,4 @@ inline size_t writechar(T *dest, char32_t character)
 
 }
 
-#endif // __DRSL_WRITECHAR_H_
+#endif // DRSL_WRITECHAR

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for compare() implementations.
 */
-#ifndef __DRSL_STRCMP_H_
-#define __DRSL_STRCMP_H_
+#ifndef DRSL_STRCMP
+#define DRSL_STRCMP
 
 #include <string.h>
 #include <assert.h>
@@ -75,4 +75,4 @@ inline int compare(const reference_string<T> &str1, const reference_string<U> &s
 
 }
 
-#endif // __DRSL_STRCMP_H_
+#endif // DRSL_STRCMP

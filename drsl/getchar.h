@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for getchar() implementations.
 */
-#ifndef __DRSL_GETCHAR_H_
-#define __DRSL_GETCHAR_H_
+#ifndef DRSL_GETCHAR
+#define DRSL_GETCHAR
 
 #include "nextchar.h"
 #include "reference_string.h"
@@ -126,4 +126,4 @@ inline char32_t getchar(const reference_string<T> &str, size_t index)
 
 }
 
-#endif // __DRSL_GETCHAR_H_
+#endif // DRSL_GETCHAR

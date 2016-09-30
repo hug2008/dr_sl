@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for split() implementations.
 */
-#ifndef __DRSL_SPLIT_H_
-#define __DRSL_SPLIT_H_
+#ifndef DRSL_SPLIT
+#define DRSL_SPLIT
 
 #include <vector>
 #include "findfirst.h"
@@ -89,4 +89,4 @@ void split(T *str, const T *delimiter, std::vector<reference_string<T> > &list, 
 
 }
 
-#endif // __DRSL_SPLIT_H_
+#endif // DRSL_SPLIT

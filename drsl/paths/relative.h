@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the relative() implementation.
 */
-#ifndef __DRSL_PATHS_RELATIVE_H_
-#define __DRSL_PATHS_RELATIVE_H_
+#ifndef DRSL_PATHS_RELATIVE
+#define DRSL_PATHS_RELATIVE
 
 namespace drsl
 {
@@ -166,4 +166,4 @@ inline wstring relative(const wchar_t *path, const wchar_t *base)
 }
 }
 
-#endif // __DRSL_PATHS_RELATIVE_H_
+#endif // DRSL_PATHS_RELATIVE

@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for chrcount() implementations.
 */
-#ifndef __DRSL_CHARCOUNT_H_
-#define __DRSL_CHARCOUNT_H_
+#ifndef DRSL_CHARCOUNT
+#define DRSL_CHARCOUNT
 
 #include "nextchar.h"
 #include "length.h"
@@ -57,4 +57,4 @@ inline size_t charcount(const reference_string<T> &str)
 
 }
 
-#endif // __DRSL_CHARCOUNT_H_
+#endif // DRSL_CHARCOUNT

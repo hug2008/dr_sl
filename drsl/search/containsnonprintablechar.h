@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the containsnonprintablechar() implementation.
 */
-#ifndef __DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
-#define __DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
+#ifndef DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
+#define DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
 
 namespace drsl
 {
@@ -48,4 +48,4 @@ bool containsnonprintablechar(const reference_string<T> &str)
 }
 }
 
-#endif // __DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
+#endif // DRSL_SEARCH_CONTAINSNONPRINTABLECHAR

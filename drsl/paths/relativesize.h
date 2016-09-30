@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the relativesize() implementation.
 */
-#ifndef __DRSL_PATHS_RELATIVESIZE_H_
-#define __DRSL_PATHS_RELATIVESIZE_H_
+#ifndef DRSL_PATHS_RELATIVESIZE
+#define DRSL_PATHS_RELATIVESIZE
 
 namespace drsl
 {
@@ -29,4 +29,4 @@ inline size_t relativesize(const T *path, const T *base, size_t pathLength = -1,
 }
 
 
-#endif // __DRSL_PATHS_RELATIVESIZE_H_
+#endif // DRSL_PATHS_RELATIVESIZE

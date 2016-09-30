@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for replace() implementations.
 */
-#ifndef __DRSL_REPLACE_H_
-#define __DRSL_REPLACE_H_
+#ifndef DRSL_REPLACE
+#define DRSL_REPLACE
 
 #include "nextchar.h"
 #include "writechar.h"
@@ -87,4 +87,4 @@ size_t replace(T *str, char32_t oldChar, char32_t newChar, size_t strSize = -1, 
 
 }
 
-#endif // __DRSL_REPLACE_H_
+#endif // DRSL_REPLACE

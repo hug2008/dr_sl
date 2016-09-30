@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for vformat() implementations.
 */
-#ifndef __DRSL_VFORMAT_H_
-#define __DRSL_VFORMAT_H_
+#ifndef DRSL_VFORMAT
+#define DRSL_VFORMAT
 
 #include <string.h>
 #include <stdlib.h>
@@ -117,4 +117,4 @@ inline int vformat(T (&dest)[destSize], const T *format, va_list args)
 
 }
 
-#endif // __DRSL_VFORMAT_H_
+#endif // DRSL_VFORMAT

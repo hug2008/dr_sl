@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for outputting different strings to C++ output streams.
 */
-#ifndef __DRSL_STREAMOUTPUT_H_
-#define __DRSL_STREAMOUTPUT_H_
+#ifndef DRSL_STREAMOUTPUT
+#define DRSL_STREAMOUTPUT
 
 #include <ostream>
 #include "string.h"
@@ -55,4 +55,4 @@ inline std::basic_ostream<T> & operator << (std::basic_ostream<T> &stream, const
 
 
 
-#endif // __DRSL_STREAMOUTPUT_H_
+#endif // DRSL_STREAMOUTPUT

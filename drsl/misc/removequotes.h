@@ -3,12 +3,10 @@
 *   \author Dave Reid
 *   \brief  Header file for removequotes() implementations.
 */
-#ifndef __DRSL_MISC_REMOVEQUOTES_H_
-#define __DRSL_MISC_REMOVEQUOTES_H_
+#ifndef DRSL_MISC_REMOVEQUOTES
+#define DRSL_MISC_REMOVEQUOTES
 
 namespace drsl
-{
-namespace misc
 {
 
 /**
@@ -78,6 +76,5 @@ void removequotes(T *str, const T *quotes, char32_t escape = '\\', size_t strLen
 }
 
 }
-}
 
-#endif // __DRSL_MISC_REMOVEQUOTES_H_
+#endif // DRSL_MISC_REMOVEQUOTES

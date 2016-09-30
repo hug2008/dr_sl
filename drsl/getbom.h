@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for getbom() implementations.
 */
-#ifndef __DRSL_GETBOM_H_
-#define __DRSL_GETBOM_H_
+#ifndef DRSL_GETBOM
+#define DRSL_GETBOM
 
 #include "nextchar.h"
 
@@ -34,4 +34,4 @@ inline char32_t getbom(T *str)
 
 }
 
-#endif // __DRSL_GETBOM_H_
+#endif // DRSL_GETBOM

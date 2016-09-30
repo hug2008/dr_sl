@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for append() implementations.
 */
-#ifndef __DRSL_APPEND_H_
-#define __DRSL_APPEND_H_
+#ifndef DRSL_APPEND
+#define DRSL_APPEND
 
 #include <assert.h>
 #include "copy.h"
@@ -81,4 +81,4 @@ inline size_t append(T *dest, const reference_string<T> &source, size_t destSize
 
 }
 
-#endif // __DRSL_APPEND_H_
+#endif // DRSL_APPEND

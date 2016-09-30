@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for copysize() implementations.
 */
-#ifndef __DRSL_COPYSIZE_H_
-#define __DRSL_COPYSIZE_H_
+#ifndef DRSL_COPYSIZE
+#define DRSL_COPYSIZE
 
 #include "copy.h"
 
@@ -35,4 +35,4 @@ inline size_t copysize(const reference_string<U> &source)
 
 }
 
-#endif // __DRSL_COPYSIZE_H_
+#endif // DRSL_COPYSIZE

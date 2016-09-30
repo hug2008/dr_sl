@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for the nextchar() family of functions.
 */
-#ifndef __DRSL_NEXTCHAR_H_
-#define __DRSL_NEXTCHAR_H_
+#ifndef DRSL_NEXTCHAR
+#define DRSL_NEXTCHAR
 
 #include <assert.h>
 #include "_private.h"
@@ -234,4 +234,4 @@ inline char32_t nextchar(reference_string<T> &str)
 
 }
 
-#endif // __DRSL_NEXTCHAR_H_
+#endif // DRSL_NEXTCHAR

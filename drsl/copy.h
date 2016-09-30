@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for copy() implementations.
 */
-#ifndef __DRSL_COPY_H_
-#define __DRSL_COPY_H_
+#ifndef DRSL_COPY
+#define DRSL_COPY
 
 #include "setup.h"
 #include "nextchar.h"
@@ -194,4 +194,4 @@ inline size_t copy(T *dest, const reference_string<U> &source, size_t destSize =
 
 }
 
-#endif // __DRSL_COPY_H_
+#endif // DRSL_COPY

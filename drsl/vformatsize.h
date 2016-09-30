@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for vformatsize() implementations.
 */
-#ifndef __DRSL_VFORMATSIZE_H_
-#define __DRSL_VFORMATSIZE_H_
+#ifndef DRSL_VFORMATSIZE
+#define DRSL_VFORMATSIZE
 
 #include "vformat.h"
 
@@ -31,4 +31,4 @@ inline size_t vformatsize(const T *format, ...)
 
 }
 
-#endif // __DRSL_VFORMATSIZE_H_
+#endif // DRSL_VFORMATSIZE

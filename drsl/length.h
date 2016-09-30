@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for length() implementations.
 */
-#ifndef __DRSL_LENGTH_H_
-#define __DRSL_LENGTH_H_
+#ifndef DRSL_LENGTH
+#define DRSL_LENGTH
 
 #include <string.h>
 #include <assert.h>
@@ -66,4 +66,4 @@ inline size_t length(const reference_string<T> &str)
 
 }
 
-#endif // __DRSL_LENGTH_H_
+#endif // DRSL_LENGTH

@@ -13,8 +13,8 @@
 *   the pointer directly from outside the class. This problem only affects slow_string.
 *   fast_string is not affected by this problem.
 */
-#ifndef __DRSL_SLOW_STRING_H_
-#define __DRSL_SLOW_STRING_H_
+#ifndef DRSL_SLOW_STRING
+#define DRSL_SLOW_STRING
 
 #include "length.h"
 #include "copysize.h"
@@ -651,4 +651,4 @@ private:
 
 }
 
-#endif // __DRSL_SLOW_STRING_H_
+#endif // DRSL_SLOW_STRING

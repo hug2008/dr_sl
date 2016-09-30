@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for findfirstof() implementations.
 */
-#ifndef __DRSL_FINDFIRSTOF_H_
-#define __DRSL_FINDFIRSTOF_H_
+#ifndef DRSL_FINDFIRSTOF
+#define DRSL_FINDFIRSTOF
 
 #include <string.h>
 #include "findfirst.h"
@@ -104,4 +104,4 @@ inline wchar_t * findfirstof(wchar_t *str, const wchar_t *charSet)
 
 }
 
-#endif // __DRSL_FINDFIRSTOF_H_
+#endif // DRSL_FINDFIRSTOF

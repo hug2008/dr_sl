@@ -3,8 +3,8 @@
 *   \author Dave Reid
 *   \brief  Header file for converting data types to strings.
 */
-#ifndef __DRSL_TOSTRING_H_
-#define __DRSL_TOSTRING_H_
+#ifndef DRSL_TOSTRING
+#define DRSL_TOSTRING
 
 #include "types.h"
 #include "copy.h"
@@ -179,4 +179,4 @@ inline void tostring(U value, T (&dest)[destSize])
 
 }
 
-#endif // __DRSL_TOSTRING_H_
+#endif // DRSL_TOSTRING
