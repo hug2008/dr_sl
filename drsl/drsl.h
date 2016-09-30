@@ -58,6 +58,4 @@
 
 #include "misc/removequotes.h"
 
-#include "list/extractlist.h"
-
 #endif // __DRSL_H_
