@@ -91,33 +91,24 @@ inline bool equal(const reference_string<T> &str1, const reference_string<T> &st
     // the lengths for reference strings is a fast operation, so this check is worth while. It
     // also simplifies the next part.
     size_t len = length(str1);
-    if (len != length(str2))
-    {
+    if (len != length(str2)) {
         return false;
     }
 
     // If the internal pointers are the same, the strings are also the same.
-    if (str1.start == str2.start && str1.end == str2.end)
-    {
+    if (str1.start == str2.start && str1.end == str2.end) {
         return true;
     }
 
-    if (caseSensitive)
-    {
-        while (--len >= 0)
-        {
-            if (str1.start[len] != str2.start[len])
-            {
+    if (caseSensitive) {
+        for (size_t i = 0; i < len; ++i) {
+            if (str1.start[i] != str2.start[len]) {
                 return false;
             }
         }
-    }
-    else
-    {
-        while (--len >= 0)
-        {
-            if (tolower(str1.start[len]) != tolower(str2.start[len]))
-            {
+    } else {
+        for (size_t i = 0; i < len; ++i) {
+            if (tolower(str1.start[i]) != tolower(str2.start[len])) {
                 return false;
             }
         }

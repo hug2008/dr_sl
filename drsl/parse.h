@@ -8,15 +8,12 @@
 
 #include <stdlib.h>
 #include <locale.h>
+#include <wchar.h>
 #include "setup.h"
 #include "types.h"
 #include "findfirst.h"
 #include "equal.h"
 #include "copysize.h"
-
-#if (COMPILER & COMPILER_GCC)
-#include <wchar.h>
-#endif
 
 namespace drsl
 {
