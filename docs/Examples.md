@@ -44,7 +44,8 @@ Here the generic API is put to use. We can see that the same function is called 
 We've created one string with a static array and another with a dynamic array. We use the same technique as the standard C++ library by not requiring us to specify the size of the destination buffer for the static array. The size must be explicitly specified for the dynamic array, however.
 
 
-= Example 2: Simple Conversion =
+Example 2: Simple Conversion
+----------------------------
 This example demonstrates dr_sl's ability to convert between different types of strings. In this example, we do a simple conversion between an archaic ANSI `char *` string and a `wchar_t *` string. This type of conversion is convienient if some system function expects the string as a `wchar_t *`.
 
 Code:
@@ -80,7 +81,8 @@ Once the memory for the new string has been allocated, we can perform the actual
 As you can see, copying a string with `drsl::copy()` will implicitly convert the string to the appropriate format. Also, you can use `drsl::copysize()` to determine the size required for a buffer for a regular string copy.
 
 
-= Example 3: Simple UTF Operations =
+Example 3: Simple UTF Operations
+--------------------------------
 This example demonstrates some simple operations for working with UTF encoded strings. It demonstrates some useful operations for working with UTF encoded strings such as iterating through each character in the string.
 
 Code:
@@ -127,7 +129,8 @@ We then demonstrate how the number of basic character units can be retrieved as 
 The beauty of this example is that the original string can be changed to any other UTF encoding (UTF-16 or UTF-32) and the program will still work without any modifications to the rest of the code.
 
 
-= Example 4: Simple UTF Conversion =
+Example 4: Simple UTF Conversion
+--------------------------------
 This example will show how easy it is to convert a string between different UTF character encodings and then back to a `wchar_t *` string.
 
 Code:
@@ -166,7 +169,8 @@ String: Hello, World!
 This example first converts a UTF-8 encoded string to a UTF-16 string. It then converts the UTF-16 string to a traditional `wchar_t` string. We can see that the process for converting between UTF encodings is the same as converting between `char *` and `wchar_t *` strings.
 
 
-= Example 5: String Class =
+Example 5: String Class
+-----------------------
 This simple example demonstrates the use of dr_sl's `std::string`-like string class.
 
 Code:
