@@ -99,9 +99,9 @@ Using dr_sl
 dr_sl is a header library, so you need only include `drsl/drsl.h`. There is no need to link
 against any libraries.
 
-To begin using dr_sl, simply include the file `<drsl/drsl.hpp>`, like so:
+To begin using dr_sl, simply include the file `<drsl/drsl.h>`, like so:
 ```c++
-#include <drsl/drsl.hpp>
+#include <drsl/drsl.h>
 ```
 
 All of the functionality in dr_sl is under the `drsl` namespace.
@@ -156,7 +156,7 @@ strings.
 
 Code:
 ```c++
-#include <drsl/drsl.hpp>
+#include <drsl/drsl.h>
 #include <iostream>
 
 int main()
@@ -206,7 +206,7 @@ the string as a `wchar_t *`.
 
 Code:
 ```c++
-#include <drsl/drsl.hpp>
+#include <drsl/drsl.h>
 #include <iostream>
 
 int main()
@@ -251,7 +251,7 @@ through each character in the string.
 
 Code:
 ```c++
-#include <drsl/drsl.hpp>
+#include <drsl/drsl.h>
 #include <iostream>
 
 int main()
@@ -308,7 +308,7 @@ encodings and then back to a `wchar_t *` string.
 
 Code:
 ```c++
-#include <drsl/drsl.hpp>
+#include <drsl/drsl.h>
 #include <iostream>
 
 int main()
@@ -350,7 +350,7 @@ This simple example demonstrates the use of dr_sl's `std::string`-like string cl
 
 Code:
 ```c++
-#include <drsl/drsl.hpp>
+#include <drsl/drsl.h>
 #include <iostream>
 
 int main()
