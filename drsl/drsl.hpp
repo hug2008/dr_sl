@@ -14,7 +14,7 @@
 #include <wchar.h>
 #include <locale.h>
 #include <assert.h>
-#include <cctype>
+#include <ctype.h>
 #include <ostream>
 #include <vector>
 
@@ -33,18 +33,13 @@
 #include "equal.hpp"
 #include "writechar.hpp"
 #include "copy.hpp"
-#include "copysize.hpp"
-#include "vformat.hpp"
-#include "vformatsize.hpp"
 #include "format.hpp"
-#include "formatsize.hpp"
 #include "parse.hpp"
 #include "tostring.hpp"
 #include "slow_string.hpp"
 #include "string.hpp"
 #include "bom.hpp"
 #include "append.hpp"
-#include "appendsize.hpp"
 #include "nextline.hpp"
 #include "stream_output.hpp"
 #include "erase.hpp"
