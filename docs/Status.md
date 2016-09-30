@@ -24,4 +24,4 @@ Support on Linux and OSX is unknown, but should work OK. Like above, Linux and O
 
 The library will not provide support for operating systems older than Windows XP, Linux kernal 2.4.x and
 Mac OS X. Likewise, compilers older than VC++ 8.0 and GCC 3.x will not be supported. That said, the library
-might still work on older platforms and compilers, but no explicit support will be included in EASL.
+might still work on older platforms and compilers, but no explicit support will be included in dr_sl.

@@ -1,4 +1,4 @@
-Getting started with EASL.
+Getting started with dr_sl.
 ==========================
 
 Installing
@@ -11,20 +11,20 @@ Getting access to the library is as simple as following these steps.
   4) Start using the library.
 
 
-Using EASL
+Using dr_sl
 ----------
-EASL is a header library, so you need only include certain header files to begin using the library. There is no need to link against any libraries.
+dr_sl is a header library, so you need only include certain header files to begin using the library. There is no need to link against any libraries.
 
-To begin using EASL, simply include the file `<easl/easl.h>`, like so:
+To begin using dr_sl, simply include the file `<drsl/drsl.h>`, like so:
 ```c++
-#include <easl/easl.h>
+#include <drsl/drsl.h>
 ```
 
-All of the functionality in EASL is under the `easl` namespace.
+All of the functionality in dr_sl is under the `easl` namespace.
 
-EASL is made up of two main sections: a low level, C-like function section; and a higher level C++ `std::string`-like section. Having the library structured like this gives developers the most flexibility.
+dr_sl is made up of two main sections: a low level, C-like function section; and a higher level C++ `std::string`-like section. Having the library structured like this gives developers the most flexibility.
 
-The C-like string manipulation routines work mostly the same as the standard C library equivalents. One major difference is that there is no difference in the name of the function for different string encodings. For example, to copy a string you simply use the `easl::copy()` function for all types of string encodings - `char *` and `wchar_t *` alike.
+The C-like string manipulation routines work mostly the same as the standard C library equivalents. One major difference is that there is no difference in the name of the function for different string encodings. For example, to copy a string you simply use the `drsl::copy()` function for all types of string encodings - `char *` and `wchar_t *` alike.
 
 
 Using Extensions
@@ -36,7 +36,7 @@ Alternatively, every extension can be included at once with `#include <easl/easl
 
 Using UTF Encoding
 ------------------
-EASL has support for UTF encoded strings. The supported encodings are UTF-8, UTF-16 and UTF-32. The table below illustrates the data types to use for the different encodings:
+dr_sl has support for UTF encoded strings. The supported encodings are UTF-8, UTF-16 and UTF-32. The table below illustrates the data types to use for the different encodings:
 
 String Data Type | Encoding
 ---------------- | --------
@@ -49,7 +49,7 @@ So, a string declared as `char *` is encoded in UTF-8; a `char16_t *` string is 
 
 `wchar_t` and UTF
 -----------------
-EASL assumes that any string contained as a `wchar_t` is UTF encoded. However, different platforms designate `wchar_t`'s with different sizes. On Windows, a `wchar_t` is 16-bit. On Linux, it's 32-bit. The specific encoding that EASL assumes depends on the size of a `wchar_t`. The table below illustrates the assumptions EASL makes.
+dr_sl assumes that any string contained as a `wchar_t` is UTF encoded. However, different platforms designate `wchar_t`'s with different sizes. On Windows, a `wchar_t` is 16-bit. On Linux, it's 32-bit. The specific encoding that dr_sl assumes depends on the size of a `wchar_t`. The table below illustrates the assumptions dr_sl makes.
 
 `sizeof(wchar_t)` | UTF Encoding
 ----------------- | ------------
@@ -62,4 +62,4 @@ More information about `wchar_t` and UTF encodings can be found in the [Technica
 
 Examples
 --------
-Learning how to use EASL is best described with some examples. Check the [Examples] wiki for some good examples on using EASL.
+Learning how to use dr_sl is best described with some examples. Check the [Examples] wiki for some good examples on using dr_sl.

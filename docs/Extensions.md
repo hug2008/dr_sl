@@ -1,11 +1,11 @@
 #summary Extension Information
 
 = Introduction =
-This page will discuss EASL's extension mechanism.
+This page will discuss dr_sl's extension mechanism.
 
 
 = About Extensions =
-EASL's extension mechanism is used to provide additional, not-so-common functionality that  does not necessarily belong in the core section of the library.
+dr_sl's extension mechanism is used to provide additional, not-so-common functionality that  does not necessarily belong in the core section of the library.
 
 As an example, the `paths` extension provides functionality such as converting between absolute and relative paths, determining if a path is relative, etc. This kind of functionality is useful for some applications, but most applications won't need it. Therefore, this functionality is encapsulated in the `paths` extension away from the core part of the library.
 
@@ -22,7 +22,7 @@ Such functionality includes converting between absolute and relative paths; dete
 The tokens extension is used to split a string into different tokens. It's main function is to iterate through each token in a string. This extension is mostly useful for things such as source code parsers.
 
 == Search - `#include <easl/ext/search.h>` ==
-The search extension is used to perform more complex or not-so-common search functionality than that provided by `easl::findfirst()`, `easl::findfirstof()`, etc.
+The search extension is used to perform more complex or not-so-common search functionality than that provided by `drsl::findfirst()`, `drsl::findfirstof()`, etc.
 
 Such functionality includes determining if a string contains a non-printable character.
 
