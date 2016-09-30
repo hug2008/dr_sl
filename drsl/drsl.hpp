@@ -28,7 +28,6 @@
 #include "compare.hpp"
 #include "find.hpp"
 #include "charcount.hpp"
-#include "equal.hpp"
 #include "writechar.hpp"
 #include "copy.hpp"
 #include "format.hpp"
