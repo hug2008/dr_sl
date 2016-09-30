@@ -36,7 +36,7 @@ dr_sl is useful for anyone who needs Unicode support in their applications. Appl
 
 Differences with IBM's ICU
 --------------------------
-[http://www.icu-project.org/ ICU] is a much larger project with a much broader scope than dr_sl. dr_sl cares only for UTF-8, UTF-16 and UTF-32 formats. This restricts dr_sl from only having to worry about the Unicode character set. On the other hand, ICU supports pretty much every character set you can think of (though, they do recommend using Unicode as much as possible). This makes ICU much more heavy-weight that dr_sl.
+[ICU](http://www.icu-project.org/) is a much larger project with a much broader scope than dr_sl. dr_sl cares only for UTF-8, UTF-16 and UTF-32 formats. This restricts dr_sl from only having to worry about the Unicode character set. On the other hand, ICU supports pretty much every character set you can think of (though, they do recommend using Unicode as much as possible). This makes ICU much more heavy-weight that dr_sl.
 
 ICU also has much better localization support. Localization will slowly be improved in dr_sl in the future.
 

@@ -8,7 +8,8 @@ A `char *` type string is always interpreted as a UTF-8 encoded string. Programs
 should be able to make use of dr_sl without any real hassles. On the other hand, calling the `str*()` functions
 with `char *` strings manipulated with dr_sl is not very well defined for the time being.
 
-= wchar_t =
+wchar_t
+-------
 The `wchar_t *` style strings aren't sufficient for reliable cross platform Unicode support. On Windows, a
 `wchar_t` is two bytes, whereas (I think) Linux assumes it to be four bytes.
 
@@ -16,7 +17,7 @@ The way it works in dr_sl is that the size of a `wchar_t` will determine how dr_
 encoded. When `wchar_t` is 8 bits (not likely), it is assumed that the string is encoded as UTF-8. When `wchar_t`
 is 16 bits, UTF-16 is assumed. When it is 32 bits, UTF-32 is assumed.
 
-According to [http://www.metagraphics.com/index.htm?page=pubs/mgct_language-portable-code.htm this article],
+According to [this article](http://www.metagraphics.com/index.htm?page=pubs/mgct_language-portable-code.htm),
 these assumptions should work reliably on Windows platforms. I'm assuming the same can be said for other
 operating systems.
 
