@@ -45,12 +45,9 @@
 
 #include "paths/_private.hpp"
 #include "paths/getfileext.hpp"
-#include "paths/getfileextsize.hpp"
 #include "paths/isnetworkpath.hpp"
 #include "paths/absolute.hpp"
-#include "paths/absolutesize.hpp"
 #include "paths/relative.hpp"
-#include "paths/relativesize.hpp"
 #include "paths/isabsolute.hpp"
 #include "paths/isrelative.hpp"
 #include "paths/splitpath.hpp"
