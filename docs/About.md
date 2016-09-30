@@ -18,7 +18,6 @@ Some of the notable features of the library include:
   * UTF encoded string manipulation routines
   * Generic API for all string encodings
   * Conversions between different encodings
-  * [Extensions Extension mechanism] for providing some not-so-common string routines.
 
 Non-Features
 ------------
@@ -26,6 +25,7 @@ Some of the features dr_sl does not do. If your program needs any of the functio
 
   * Non-Unicode string manipulation
       * No support for UCS-2, etc. Only supports UTF-8, UTF-16 and UTF-32. Conversions between UCS and UTF encodings may be implemented in the future.
+  * dr_sl is not optimized
 
 dr_sl does not work with any string encoding other than UTF-8, UTF-16 and UTF-32. So, for example, if you need to convert a UTF-16 string to a UCS-2 string, you will need to perform the conversion either manually or via a separate library such as IBM's ICU. A UCS/UTF converter may be implemented in the future.
 

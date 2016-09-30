@@ -1,37 +1,20 @@
 Getting started with dr_sl.
 ==========================
 
-Installing
-----------
-Getting access to the library is as simple as following these steps.
-
-  1) [http://easl.googlecode.com/files/easl-0.0.3.zip Download] the source code package.
-  2) Extract the "easl" folder from inside the package to somewhere on the hard disk.
-  3) Configure you compiler to look for header file in the folder that the "easl" folder was extracted into.
-  4) Start using the library.
-
-
 Using dr_sl
-----------
-dr_sl is a header library, so you need only include certain header files to begin using the library. There is no need to link against any libraries.
+-----------
+dr_sl is a header library, so you need only include `drsl/drsl.h`. There is no need to link against any libraries.
 
 To begin using dr_sl, simply include the file `<drsl/drsl.h>`, like so:
 ```c++
 #include <drsl/drsl.h>
 ```
 
-All of the functionality in dr_sl is under the `easl` namespace.
+All of the functionality in dr_sl is under the `drsl` namespace.
 
 dr_sl is made up of two main sections: a low level, C-like function section; and a higher level C++ `std::string`-like section. Having the library structured like this gives developers the most flexibility.
 
 The C-like string manipulation routines work mostly the same as the standard C library equivalents. One major difference is that there is no difference in the name of the function for different string encodings. For example, to copy a string you simply use the `drsl::copy()` function for all types of string encodings - `char *` and `wchar_t *` alike.
-
-
-Using Extensions
-----------------
-To use [Extensions extensions], you need only include the appropriate header file for that extension. All extensions can be included with `#include <easl/ext/<extension>.h`, where `<extension>` is the name of the extension. So, for example, if you want to use the `paths` extension, use `#include <easl/ext/paths.h>`.
-
-Alternatively, every extension can be included at once with `#include <easl/easlext.h>`
 
 
 Using UTF Encoding
