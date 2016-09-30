@@ -1,7 +1,7 @@
 // Copyright (C) 2016 David Reid. See included LICENSE file.
 
-#ifndef DRSL
-#define DRSL
+#ifndef dr_sl_h
+#define dr_sl_h
 
 #include <stdlib.h>
 #include <string.h>
@@ -58,4 +58,4 @@
 
 #include "misc/removequotes.hpp"
 
-#endif // DRSL
+#endif //dr_sl_h
