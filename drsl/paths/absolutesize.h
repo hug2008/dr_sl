@@ -6,8 +6,6 @@
 #ifndef __DRSL_PATHS_ABSOLUTESIZE_H_
 #define __DRSL_PATHS_ABSOLUTESIZE_H_
 
-#include "absolute.h"
-
 namespace drsl
 {
 namespace paths

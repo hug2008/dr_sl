@@ -6,11 +6,6 @@
 #ifndef __DRSL_PATHS_GETFILEEXT_H_
 #define __DRSL_PATHS_GETFILEEXT_H_
 
-#include <assert.h>
-#include "../nextchar.h"
-#include "../string.h"
-#include "../reference_string.h"
-
 namespace drsl
 {
 namespace paths

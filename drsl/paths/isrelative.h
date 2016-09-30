@@ -6,8 +6,6 @@
 #ifndef __DRSL_PATHS_ISRELATIVE_H_
 #define __DRSL_PATHS_ISRELATIVE_H_
 
-#include "isabsolute.h"
-
 namespace drsl
 {
 namespace paths

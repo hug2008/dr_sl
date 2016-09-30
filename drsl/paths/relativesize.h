@@ -6,8 +6,6 @@
 #ifndef __DRSL_PATHS_RELATIVESIZE_H_
 #define __DRSL_PATHS_RELATIVESIZE_H_
 
-#include "relative.h"
-
 namespace drsl
 {
 namespace paths

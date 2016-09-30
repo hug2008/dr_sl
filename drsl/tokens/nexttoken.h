@@ -6,10 +6,6 @@
 #ifndef __DRSL_TOKENS_NEXTTOKEN_H_
 #define __DRSL_TOKENS_NEXTTOKEN_H_
 
-#include "../reference_string.h"
-#include "../findfirst.h"
-#include "_private.h"
-
 namespace drsl
 {
 namespace tokens

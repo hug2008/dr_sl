@@ -6,9 +6,6 @@
 #ifndef __DRSL_TOKENS_PRIVATE_H_
 #define __DRSL_TOKENS_PRIVATE_H_
 
-#include "../findfirst.h"
-#include "../equal.h"
-
 namespace drsl
 {
 

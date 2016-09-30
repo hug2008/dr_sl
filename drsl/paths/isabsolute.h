@@ -6,8 +6,6 @@
 #ifndef __DRSL_PATHS_ISABSOLUTE_H_
 #define __DRSL_PATHS_ISABSOLUTE_H_
 
-#include "isnetworkpath.h"
-
 namespace drsl
 {
 namespace paths

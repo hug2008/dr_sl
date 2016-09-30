@@ -6,8 +6,6 @@
 #ifndef __DRSL_PATHS_ISNETWORKPATH_H_
 #define __DRSL_PATHS_ISNETWORKPATH_H_
 
-#include "../nextchar.h"
-
 namespace drsl
 {
 namespace paths

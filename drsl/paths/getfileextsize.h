@@ -6,8 +6,6 @@
 #ifndef __DRSL_PATHS_GETFILEEXTSIZE_H_
 #define __DRSL_PATHS_GETFILEEXTSIZE_H_
 
-#include "getfileext.h"
-
 namespace drsl
 {
 namespace paths

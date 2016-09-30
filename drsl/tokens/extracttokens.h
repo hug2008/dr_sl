@@ -6,9 +6,6 @@
 #ifndef __DRSL_TOKENS_EXTRACTTOKENS_H_
 #define __DRSL_TOKENS_EXTRACTTOKENS_H_
 
-#include <vector>
-#include "nexttoken.h"
-
 namespace drsl
 {
 namespace tokens

@@ -6,9 +6,6 @@
 #ifndef __DRSL_MISC_REMOVEQUOTES_H_
 #define __DRSL_MISC_REMOVEQUOTES_H_
 
-#include "../findfirstof.h"
-#include "../_private.h"
-
 namespace drsl
 {
 namespace misc
