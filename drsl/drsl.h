@@ -12,6 +12,8 @@
 #include <locale.h>
 #include <assert.h>
 #include <ctype.h>
+
+#ifdef __cplusplus
 #include <ostream>
 #include <vector>
 
@@ -57,5 +59,6 @@
 #include "search/containsnonprintablechar.hpp"
 
 #include "misc/removequotes.hpp"
+#endif  //__cplusplus
 
 #endif //dr_sl_h
