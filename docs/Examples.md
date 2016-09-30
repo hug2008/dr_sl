@@ -1,14 +1,12 @@
-#summary EASL usage examples
+EASL usage examples
+===================
 
-= Introduction =
-This page will show some examples of how to use EASL.
-
-
-= Example 1: Simple Operations =
+Example 1: Simple Operations
+----------------------------
 This example demonstrates how to use traditional C-like string manipulation routines for strings.
 
 Code:
-{{{
+```c++
 #include <easl/easl.h>
 #include <iostream>
 
@@ -30,16 +28,16 @@ int main()
 
     return 0;
 }
-}}}
+```
 
 Output
-{{{
+```
 String 1 length:  13
 String 1 content: Hello, World!
 
 String 2 length:  6
 String 2 content: Hello!
-}}}
+```
 
 Here the generic API is put to use. We can see that the same function is called for both types of strings. So no more `strcpy()`/`wcscpy()` mixing and matching for C-style strings.
 
@@ -50,7 +48,7 @@ We've created one string with a static array and another with a dynamic array. W
 This example demonstrates EASL's ability to convert between different types of strings. In this example, we do a simple conversion between an archaic ANSI `char *` string and a `wchar_t *` string. This type of conversion is convienient if some system function expects the string as a `wchar_t *`.
 
 Code:
-{{{
+```c++
 #include <easl/easl.h>
 #include <iostream>
 
@@ -68,12 +66,12 @@ int main()
 
     return 0;
 }
-}}}
+```
 
 Output:
-{{{
+```
 Converted String: Hello, World!
-}}}
+```
 
 Here we are converting a `char *` string ("Hello, World!") to a `wchar_t *` string. We first need to determine how many `wchar_t`'s we need to allocate in order to store the converted string with a null terminator using `easl::copysize()`. This is a function template that needs the type we are converting to to be specified explicitly.
 
@@ -86,7 +84,7 @@ As you can see, copying a string with `easl::copy()` will implicitly convert the
 This example demonstrates some simple operations for working with UTF encoded strings. It demonstrates some useful operations for working with UTF encoded strings such as iterating through each character in the string.
 
 Code:
-{{{
+```c++
 #include <easl/easl.h>
 #include <iostream>
 
@@ -113,14 +111,14 @@ int main()
 
     return 0;
 }
-}}}
+```
 
 Output:
-{{{
+```
 I'm a UTF-8 string!
 Number of char's in str1: 19
 Number of characters in str1: 19
-}}}
+```
 
 Here we take a UTF-8 encoded string and perform some operations on it. The first thing we do is iterate through each character in the string with `easl::strnextchar()`. We need to create a temporary pointer for the iterator so that we can reference the original string reliably.
 
@@ -133,7 +131,7 @@ The beauty of this example is that the original string can be changed to any oth
 This example will show how easy it is to convert a string between different UTF character encodings and then back to a `wchar_t *` string.
 
 Code:
-{{{
+```c++
 #include <easl/easl.h>
 #include <iostream>
 
@@ -158,12 +156,12 @@ int main()
 
     return 0;
 }
-}}}
+```
 
 Output
-{{{
+```
 String: Hello, World!
-}}}
+```
 
 This example first converts a UTF-8 encoded string to a UTF-16 string. It then converts the UTF-16 string to a traditional `wchar_t` string. We can see that the process for converting between UTF encodings is the same as converting between `char *` and `wchar_t *` strings.
 
@@ -172,7 +170,7 @@ This example first converts a UTF-8 encoded string to a UTF-16 string. It then c
 This simple example demonstrates the use of EASL's `std::string`-like string class.
 
 Code:
-{{{
+```c++
 #include <easl/easl.h>
 #include <iostream>
 
@@ -197,14 +195,14 @@ int main()
 
     return 0;
 }
-}}}
+```
 
 Output:
-{{{
+```
 some_utf8_string:  Hello, World!
 some_utf16_string: Hello, World!
 some_utf32_string: Hello, World!
-}}}
+```
 
 This example demonstrates how easy it is to work with different string encodings when using EASL's string class(es). Here we first declare two strings of different encodings. The second string, which is a `wchar_t *` string internally is appended to a `char *` (UTF-8) string.
 
