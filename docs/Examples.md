@@ -95,7 +95,7 @@ int main()
 
     // Iterate through each character.
     const char *temp = str;
-    drsl::char32_t ch;
+    char32_t ch;
     while ((ch = drsl::nextchar(temp)) != NULL)
     {
         std::cout << static_cast<char>(ch);
