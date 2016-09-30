@@ -8,9 +8,6 @@
 
 namespace drsl
 {
-namespace tokens
-{
-
 /**
 *   \brief                 Extracts a list of tokens from the specified string.
 *   \param  str       [in] The string to tokenise.
@@ -25,8 +22,7 @@ namespace tokens
 *       equal. The \c lines list is a pointer so that it can be NULL if lines are not needed.
 */
 template <typename T>
-void extracttokens(T *str, std::vector<reference_string<T> > &tokens, std::vector<size_t> *lines,
-                   const TOKEN_OPTIONS<T> *options, size_t strLength = -1)
+void extracttokens(T *str, std::vector<reference_string<T> > &tokens, std::vector<size_t> *lines, const TOKEN_OPTIONS<T> *options, size_t strLength = -1)
 {
     reference_string<T> cur_token;
     size_t cur_line;
@@ -46,9 +42,6 @@ template <typename T>
 void extracttokens(T *str, std::vector<reference_string<T> > &tokens, std::vector<size_t> *lines, size_t strLength = -1)
 {
     extracttokens(str, tokens, lines, (const TOKEN_OPTIONS<T> *)NULL, strLength);
-}
-
-
 }
 }
 

@@ -8,9 +8,6 @@
 
 namespace drsl
 {
-namespace tokens
-{
-
 /**
 *   \brief  Structure describing the options for extracting tokens.
 */
@@ -387,9 +384,6 @@ template <typename T>
 inline bool nexttoken(reference_string<T> &str, reference_string<T> &token, size_t *line)
 {
     return nexttoken(str, token, line, (const TOKEN_OPTIONS<T> *)NULL);
-}
-
-
 }
 }
 

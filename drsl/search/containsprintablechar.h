@@ -8,8 +8,6 @@
 
 namespace drsl
 {
-namespace search
-{
 
 /**
 *   \brief                 Determines if the specified string contains a printable character.
@@ -43,7 +41,6 @@ inline bool containsprintablechar(const reference_string<T> &str)
     return containsprintablechar(str.start, length(str));
 }
 
-}
 }
 
 #endif // DRSL_SEARCH_CONTAINSPRINTABLECHAR

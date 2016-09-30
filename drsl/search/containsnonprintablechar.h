@@ -8,8 +8,6 @@
 
 namespace drsl
 {
-namespace search
-{
 
 /**
 *   \brief                 Determines if the specified string contains a non-printable character.
@@ -45,7 +43,6 @@ bool containsnonprintablechar(const reference_string<T> &str)
     return containsnonprintablechar(str.start, length(str));
 }
 
-}
 }
 
 #endif // DRSL_SEARCH_CONTAINSNONPRINTABLECHAR
