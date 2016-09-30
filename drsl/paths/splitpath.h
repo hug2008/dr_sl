@@ -6,7 +6,7 @@
 #ifndef __DRSL_PATHS_SPLITPATH_H_
 #define __DRSL_PATHS_SPLITPATH_H_
 
-#include "../../nextchar.h"
+#include "../nextchar.h"
 
 namespace drsl
 {

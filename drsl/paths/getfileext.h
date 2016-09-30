@@ -7,9 +7,9 @@
 #define __DRSL_PATHS_GETFILEEXT_H_
 
 #include <assert.h>
-#include "../../nextchar.h"
-#include "../../string.h"
-#include "../../reference_string.h"
+#include "../nextchar.h"
+#include "../string.h"
+#include "../reference_string.h"
 
 namespace drsl
 {

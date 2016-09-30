@@ -7,9 +7,9 @@
 #define __DRSL_PATHS_ABSOLUTE_H_
 
 #include <assert.h>
-#include "../../string.h"
-#include "../../nextchar.h"
-#include "../../writechar.h"
+#include "../string.h"
+#include "../nextchar.h"
+#include "../writechar.h"
 #include "_private.h"               // drsl/ext/paths/_private.h
 
 namespace drsl

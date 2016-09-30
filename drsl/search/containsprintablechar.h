@@ -6,8 +6,8 @@
 #ifndef __DRSL_SEARCH_CONTAINSPRINTABLECHAR
 #define __DRSL_SEARCH_CONTAINSPRINTABLECHAR
 
-#include "../../nextchar.h"
-#include "../../length.h"
+#include "../nextchar.h"
+#include "../length.h"
 
 namespace drsl
 {

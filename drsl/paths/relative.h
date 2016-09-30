@@ -7,9 +7,9 @@
 #define __DRSL_PATHS_RELATIVE_H_
 
 #include <assert.h>
-#include "../../_private.h"         // drsl/_private.h"
-#include "../../nextchar.h"
-#include "../../equal.h"
+#include "../_private.h"         // drsl/_private.h"
+#include "../nextchar.h"
+#include "../equal.h"
 #include "_private.h"               // drsl/ext/paths/_private.h
 
 namespace drsl

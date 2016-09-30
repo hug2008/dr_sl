@@ -7,7 +7,7 @@
 #define __DRSL_PATHS_PRIVATE_H_
 
 #include <ctype.h>
-#include "../../reference_string.h"
+#include "../reference_string.h"
 
 // Defines the directory slash for platforms.
 #if (PLATFORM == PLATFORM_WINDOWS)

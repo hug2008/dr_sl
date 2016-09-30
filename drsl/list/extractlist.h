@@ -7,7 +7,6 @@
 #define __DRSL_LIST_EXTRACTLIST_H_
 
 #include <vector>
-#include "../tokens.h"
 
 namespace drsl
 {

@@ -39,4 +39,25 @@
 #include "replace.h"
 #include "split.h"
 
+#include "paths/getfileext.h"
+#include "paths/getfileextsize.h"
+#include "paths/absolute.h"
+#include "paths/absolutesize.h"
+#include "paths/relative.h"
+#include "paths/relativesize.h"
+#include "paths/isabsolute.h"
+#include "paths/isrelative.h"
+#include "paths/isnetworkpath.h"
+#include "paths/splitpath.h"
+
+#include "tokens/nexttoken.h"
+#include "tokens/extracttokens.h"
+
+#include "search/containsprintablechar.h"
+#include "search/containsnonprintablechar.h"
+
+#include "misc/removequotes.h"
+
+#include "list/extractlist.h"
+
 #endif // __DRSL_H_
