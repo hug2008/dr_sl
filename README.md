@@ -18,7 +18,7 @@ domain. I may change it to public domain in the future if I feel the need.
 
 Below is the original documentation with some small adjustments for rebranding and
 whatnot. It's very possible this is a bit inaccurate and out of date, but I'll address
-it those issues over time.
+those issues over time.
 
 * * *
 
@@ -26,7 +26,8 @@ About dr_sl
 ===========
 dr_sl is a C++ header library for working with strings.
 
-It's primary goal is to ease the pain with using Unicode strings in C++. It has support for UTF-8, UTF-16 and UTF-32 string encodings.
+It's primary goal is to ease the pain with using Unicode strings in C++. It has support for
+UTF-8, UTF-16 and UTF-32 string encodings.
 
 
 Features
